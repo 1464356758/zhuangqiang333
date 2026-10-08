@@ -1,0 +1,8 @@
+node_modules/
+tooling/
+wp-tooling/
+operations/private/
+*.log
+tmp/
+artifacts/
+release/
