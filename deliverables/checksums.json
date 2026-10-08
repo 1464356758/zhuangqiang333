@@ -1,0 +1,18 @@
+[
+  {
+    "file": "tiersheet-standalone-0.1.0.zip",
+    "sha256": "29c2c8db1c4cb66948f829c6cb289f3ac988ecf0c71c64a6f0b584c94bcce9f8"
+  },
+  {
+    "file": "tiersheet-free-wordpress-0.1.0.zip",
+    "sha256": "df6f7280915a1c32dc1d40c249f58ef7bc3e183d371f4b0742c6a0d819695968"
+  },
+  {
+    "file": "tiersheet-public-site-0.1.0.zip",
+    "sha256": "bd7c2d795a88cf90ab0dbf4bf38b7b2dce18303a814e9fb47077f152b634f08e"
+  },
+  {
+    "file": "tiersheet-project-0.1.0.zip",
+    "sha256": "0946c7c3c9f6224fac7d0e40560d9c3b83f44995f41c121d06aae97940ec12be"
+  }
+]

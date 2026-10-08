@@ -26,9 +26,18 @@ fs.mkdirSync(pluginOut,{recursive:true});
 fs.writeFileSync(path.join(pluginOut,'free.html'),inline('free.html'));
 for(const name of['tiersheet-price-list.php','readme.txt','COPYING'])fs.copyFileSync(path.join(root,'wordpress/tiersheet-price-list',name),path.join(pluginOut,name));
 const sourceOut=path.join(pluginOut,'source');fs.mkdirSync(sourceOut,{recursive:true});
-for(const name of['common.js','archive.js','ui-common.js','free-app.js'])fs.copyFileSync(path.join(root,'src',name),path.join(sourceOut,name));
+for(const name of['common.js','archive.js','ui-common.js','free-config.js','free-app.js'])fs.copyFileSync(path.join(root,'src',name),path.join(sourceOut,name));
 fs.copyFileSync(path.join(root,'web/free.html'),path.join(sourceOut,'free.html'));
 fs.copyFileSync(path.join(root,'web/styles.css'),path.join(sourceOut,'styles.css'));
 fs.writeFileSync(path.join(sourceOut,'BUILD.md'),'# Free edition source\n\nThese original, readable JavaScript sources are GPL-2.0-or-later. free.html in the package is an unminified self-contained build. No batch edition code is included. Rebuild with scripts/build.cjs in the project repository; no third-party dependency is needed.\n');
 fs.copyFileSync(path.join(root,'LICENSES.md'),path.join(pluginOut,'LICENSES.md'));
-console.log('Built dist/index.html, dist/free.html and the complete free WordPress package.');
+const siteOut=path.join(out,'site');fs.mkdirSync(siteOut,{recursive:true});
+fs.writeFileSync(path.join(siteOut,'index.html'),inline('landing.html'));
+fs.writeFileSync(path.join(siteOut,'free.html'),inline('free.html'));
+fs.copyFileSync(path.join(root,'web/legal.html'),path.join(siteOut,'legal.html'));
+const screenshots=path.join(root,'docs/screenshots');
+if(fs.existsSync(screenshots)){
+ fs.mkdirSync(path.join(siteOut,'screenshots'),{recursive:true});
+ for(const name of['tiersheet-desktop.png','tiersheet-free-desktop.png'])if(fs.existsSync(path.join(screenshots,name)))fs.copyFileSync(path.join(screenshots,name),path.join(siteOut,'screenshots',name));
+}
+console.log('Built offline editions, the free WordPress package and dist/site publication draft.');

@@ -1,0 +1,8 @@
+{
+  "fixtureMode": "synthetic; not customer evidence",
+  "checks": [
+    "ZIP CRC, 9 files, all 15 prices, override audit and 3 A4 PDFs verified",
+    "Long-name CSV-only fallback produces a complete valid ZIP",
+    "Free edition includes all 101 records and 5 PDF pages"
+  ]
+}

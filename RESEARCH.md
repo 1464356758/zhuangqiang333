@@ -6,12 +6,12 @@
 
 选择一个**零现金成本的有限功能实验**：TierSheet（暂用名）——从商品CSV和价格等级规则生成批发价目表批量包。不是已验证能盈利的结论。先解决“一个商品表对应多份价格版”的重复工作；通用目录、通用CSV检查、通用条码不开发。新产品的实际付款、插件自然分发能力、审核通过与到账均未验证。
 
-调查28个不同机会、19个商业/AI案例（其中12个有公开交易计数）、12个GitHub项目和9类分发入口。公开交易证据集中于WP与Blender市场，代表本轮样本偏差，不能外推为全市场最优。没有获取可靠关键词月搜索量，也没有真实店铺转化率，禁止编造。
+调查28个不同机会、20个商业/AI案例（其中12个有公开交易计数）、12个GitHub项目和9类分发入口。公开交易证据集中于WP与Blender市场，代表本轮样本偏差，不能外推为全市场最优。没有获取可靠关键词月搜索量，也没有真实店铺转化率，禁止编造。
 
 ## 28个机会
 
-|编号|机会/谁付钱及理由|现有证据/竞争|发现渠道及可达性|技术/交付与成本估计|判断|
-|---|---|---|---|---|---|
+|编号|机会|谁付钱及理由|现有证据/竞争|发现渠道及可达性|技术/交付与成本估计|判断|
+|---|---|---|---|---|---|---|
 |01|批发多价格等级价目表批量打包|小型批发商、Woo店主；减少重复排版与错发价格|S06/S68/S69；同类付款与业务流程，特定新产品付费未验证|WordPress免费基础插件→独立批量版|原生JS；2–4天验证；固定0|最优实验；批量不同价格版是待验证切口，免费目录不等于无竞争|
 |02|Woo商品CSV更新前检查|批量改价店主；减少覆盖、格式错误|S01/S23–28；问题真实|WordPress目录|PapaParse/自研；1–3天；0|失败：免费CatalogDock覆盖核心，停止|
 |03|Shopify CSV修复/导入预检|商品管理商家；减少导入出错|S13/S29/S30；Matrixify付费，两个新检查器无评论|Shopify商店|CSV组件；3–7天；API/托管需额外验证|降权：付费不是导入预检单独付费的证明|
@@ -66,6 +66,7 @@ A是市场公开计数，不是银行审计；B是可追溯客户自述或平台
 |17|Cursor制作移动应用组合|多个移动App|IH2026采访自述$185k/月|C：UGC与付费推广为主要增长，违背本实验约束|S17|
 |18|Tabu.hr（Claude Code构建部分产品）|企业薪资基准|HN2026-10创办人称约€100k ARR、50+付费企业|C：原发帖，自述，非审计；先积累多年数据|S19|
 |19|四个AI开发收入案例|不同AI软件|IH正文访问受限|D：未验证，不引用收入数字、不计付款证据|S18|
+|20|Price List Pro（Shopify）|$9.99/月，7日试用|2026-07商家称已用6个月，实际价目表反馈；16评论|B：可追溯实际使用，但不能把评论全算付款。功能更丰富，竞争压力|S85|
 
 AI案例的结论：AI能缩短实现时间，但不替代分发。BuiltWithAI规模很小，不能包装成暴富案例；移动App组合依赖UGC/推广；Tabu.hr有多年数据积累。主动搜索覆盖ChatGPT、Claude、Cursor、Codex和AI Agent；没有找到能同时证明“这些工具开发、低现金、不主动获客、14日盈利”的充分审计案例。HN讨论与Product Hunt上架/排名本身不是付款。老案例与历史买家评论明确标注年份，不伪装为过去12个月的数据。
 
@@ -99,6 +100,13 @@ AI案例的结论：AI能缩短实现时间，但不替代分发。BuiltWithAI�
 - 零评论的新付费App证明有人挂牌报价，不能证明有人付款（S29/S30）。
 - Reddit部分推广回复被删除（S70）；不会把给求助者发广告作为获客计划。
 - 14天是目标：WP审核+支付KYC+首批自然曝光可超过该期限；收款后Creem7–12天审核、每月1/15窗口及$50门槛会使到账更晚。
+
+## 发布准备中的补充复查
+
+S85的$9.99/月付费产品支持多列表、PDF/XLS、商品图片、QR和店铺集成，比本实验更完整；不声称需要批量目录的买家没有成熟选项。本实验只测试$19买断、离线CSV多档位/覆盖价ZIP这个窄切口，不因为售价低就推定用户付款。
+S93的WordPress“price list”标签已有免费定价表、菜单、角色定价和新插件，体现真实目录入口与竞争；安装量不是我们的搜索流量。未拿到月搜索量、排名或新插件曝光概率。
+S86检索到TierSphere使用“TierSheet”称其报告，另有历史UI组件名称；暂用测试名不等于商标可注册或最终批准。没有买域名。
+S87/S88用于实际WordPress版本/本地CLI测试，S89–92用于部署/统计边界；不把Cloudflare Visits当去重真实人数。
 
 ## 来源索引
 
@@ -188,3 +196,13 @@ AI案例的结论：AI能缩短实现时间，但不替代分发。BuiltWithAI�
 - S82 [TexturePacker永久许可商店](https://www.codeandweb.com/store/texturepacker-single) — 2026-10-08
 - S83 [WebToffee Woo导入导出套件](https://www.webtoffee.com/product/woocommerce-import-export-suite/) — 2026-10-08
 - S84 [B2B客户定价CSV工作流](https://b2bkingplugin.com/docs/customer-price-lists/) — 2026-10-08
+
+- S85 [Price List Pro定价与近期商家使用](https://apps.shopify.com/easy-price-list) — 2026-10-08
+- S86 [TierSphere已有TierSheet称呼，名称核查限制](https://www.tiersphere.com/pricing) — 2026-10-08
+- S87 [WordPress当前正式版本7.1.3](https://wordpress.org/download/) — 2026-10-08
+- S88 [官方Playground CLI](https://developer.wordpress.org/playground/developers/local-development/wp-playground-cli/) — 2026-10-08
+- S89 [Cloudflare Pages](https://www.cloudflare.com/products/pages/) — 2026-10-08
+- S90 [Cloudflare Direct Upload](https://developers.cloudflare.com/pages/get-started/direct-upload/) — 2026-10-08
+- S91 [Cloudflare Pages限制](https://developers.cloudflare.com/pages/platform/limits/) — 2026-10-08
+- S92 [Cloudflare Visits定义，不等于去重人数](https://developers.cloudflare.com/web-analytics/data-metrics/high-level-metrics/) — 2026-10-08
+- S93 [WordPress price list标签入口/竞争](https://wordpress.org/plugins/tags/price-list/) — 2026-10-08

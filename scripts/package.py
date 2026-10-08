@@ -15,7 +15,9 @@ results = []
 results.append(archive("tiersheet-standalone-0.1.0.zip", [(ROOT/"dist"/p, p) for p in ("index.html","legal.html")] + [(ROOT/p, p) for p in ("TUTORIAL.md","LICENSES.md")]))
 plugin = ROOT/"dist/tiersheet-price-list"
 results.append(archive("tiersheet-free-wordpress-0.1.0.zip", [(p, "tiersheet-price-list/"+p.relative_to(plugin).as_posix()) for p in sorted(plugin.rglob("*")) if p.is_file()]))
-allowed = ("src","web","scripts","tests","research","operations","wordpress","dist")
+site = ROOT/"dist/site"
+results.append(archive("tiersheet-public-site-0.1.0.zip", [(p, p.relative_to(site).as_posix()) for p in sorted(site.rglob("*")) if p.is_file()]))
+allowed = ("src","web","scripts","tests","research","operations","wordpress","dist","docs")
 files = [(p, "tiersheet-project/"+p.name) for p in sorted(ROOT.glob("*")) if p.is_file()]
 for folder in allowed:
     for p in sorted((ROOT/folder).rglob("*")):

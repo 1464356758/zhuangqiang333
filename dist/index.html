@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'sha256-hPBCb/NET1jDR+xidzlXXW6ZgOoFXAckD2WYlEePbHw=' 'sha256-2UixohACAxGdUynqhNOnozTMNKp5vvkeLrH1mnUdA9k=' 'sha256-xQrApOf6q1tTHFUCyK3Po9Uu53gibRjU0KWEe8nmJO0=' 'sha256-j2+sNkjd01bxMU3BsLCtp3wG2wOkM9rMut7HhP2mG+4=' 'sha256-LR2S8rhf6YEEgzvIRrYoHZH2boFEjRN7XwDkWs4rlNs=' 'sha256-IWhi7PLH7MoD16yzfldjL0nBlHxZ5JndSJEWsdt+vWY='; style-src 'sha256-+fdo2l5D/Yt/dzdCWgiAp+M5iAivLTT3faINBcFeaeY='; img-src data: blob:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+<title>TierSheet — Batch wholesale price lists</title>
+<style>:root{font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#173b2e;background:#f5f6f0;font-synthesis:none}*{box-sizing:border-box}body{margin:0}button,input,select{font:inherit}button,a{touch-action:manipulation}button{cursor:pointer;border:1px solid #c4d0c8;border-radius:9px;padding:11px 16px;background:#fff;color:#173b2e;font-weight:600}button:hover{background:#eaf2e9}button:disabled{opacity:.5;cursor:not-allowed}button.primary{background:#164734;color:#fff;border-color:#164734}button.primary:hover{background:#245e47}.top{max-width:1260px;margin:auto;padding:24px 32px 0;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;gap:10px;align-items:center;font-weight:780;font-size:21px;letter-spacing:-.6px}.mark{width:32px;height:32px;display:grid;place-items:center;background:#164734;color:#effbc9;border-radius:8px}.pill{font-size:12px;border:1px solid #cfdbce;border-radius:30px;padding:7px 12px;color:#46614d;background:#f5f9ed}.hero{max-width:1260px;margin:auto;padding:48px 32px 28px;display:flex;gap:30px;align-items:end;justify-content:space-between}.eyebrow{font-size:12px;letter-spacing:1.5px;font-weight:750;color:#637459;text-transform:uppercase}h1{font-size:clamp(30px,4vw,46px);letter-spacing:-1.8px;margin:12px 0 14px;line-height:1.1;max-width:680px}h2{margin:0 0 9px;font-size:18px}h3{font-size:14px;margin:18px 0 10px}p{line-height:1.65;color:#5d6f62;margin:10px 0}.hero p{max-width:650px;font-size:15px}.hero-actions{display:flex;gap:10px;flex-shrink:0}.workspace{max-width:1260px;margin:auto;padding:0 32px 40px;display:grid;grid-template-columns:minmax(310px,390px) minmax(0,1fr);gap:22px;align-items:start}.card{background:#fff;border:1px solid #dfe5da;border-radius:16px;padding:24px;box-shadow:0 3px 6px #173b2e04}.step{display:flex;align-items:center;gap:9px}.number{display:grid;place-items:center;width:25px;height:25px;border-radius:50%;background:#edf2e3;font-size:13px;color:#527141}.help{font-size:12px;color:#687768;line-height:1.6}.field{margin:16px 0}.field label,.options label{display:block;font-size:12px;font-weight:650;margin-bottom:7px}input[type=file]{width:100%;padding:11px;background:#f8faf5;border:1px dashed #b6c7ad;border-radius:9px;font-size:12px;color:#5d6f62}input[type=file]::file-selector-button{border:0;background:#e9f0e1;border-radius:5px;padding:6px;color:#385138;margin-right:10px}input[type=text],input[type=date],input[type=number],select{width:100%;border:1px solid #ced9cb;padding:10px 11px;border-radius:7px;background:#fff;color:#173b2e;font-size:13px}.options{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}.divider{height:1px;background:#e6ebe1;margin:22px 0}.wide{width:100%}.check{display:flex;align-items:flex-start;gap:8px;font-size:12px;color:#51624e;line-height:1.55;margin:16px 0}.check input{margin-top:3px;flex-shrink:0}.status{padding:12px;border-radius:8px;background:#edf4e7;color:#3b643f;font-size:12px;line-height:1.6;overflow-wrap:anywhere}.status.error{background:#fff0e9;color:#8a4227}.preview-card{min-height:450px}.preview-top{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:20px}.empty{border:1px dashed #c8d3c2;border-radius:12px;padding:74px 24px;text-align:center;max-width:100%;background:linear-gradient(135deg,#f9fbf4,#f0f5ee)}.empty-symbol{font-size:32px;margin-bottom:14px;color:#729a58}.empty h2{font-size:20px}.empty p{font-size:13px;max-width:350px;margin:12px auto}.sheet{border:1px solid #dce4d6;border-radius:10px;overflow:hidden}.sheet-heading{padding:28px 24px 18px;border-top:6px solid #164734;background:#fff}.sheet-heading h2{font-size:22px;letter-spacing:-.6px;overflow-wrap:anywhere}.sheet-heading p{margin:5px 0;font-size:12px}table{border-collapse:collapse;width:100%;font-size:12px;table-layout:fixed}thead{background:#f0f5e9;color:#637655;text-transform:uppercase;font-size:10px;letter-spacing:.7px}th,td{padding:13px 15px;text-align:left;border-bottom:1px solid #e9eee4;overflow-wrap:anywhere}th:first-child,td:first-child{width:24%;color:#6b7d63}th:last-child,td:last-child{width:22%;text-align:right;font-variant-numeric:tabular-nums}tbody tr:last-child td{border-bottom:0}.exports{display:flex;flex-wrap:wrap;gap:10px;margin-top:20px}.summary{font-size:12px;padding:7px 10px;border-radius:7px;background:#eef5e6;color:#547143}.notice-box{margin-top:20px}#issues{padding-left:20px;max-height:220px;overflow:auto;font-size:12px;line-height:1.6}#issues li{margin-bottom:8px}#issues .error{color:#9c462c}#issues .warning{color:#836621}.footer{max-width:1260px;margin:auto;padding:0 32px 30px;font-size:12px;color:#6b7d65;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}.footer a{color:#546e3c}.sample{color:#805f16;background:#f9f0d2;border-color:#ebda9d}.support{max-width:1260px;margin:0 auto 30px;padding:0 32px}.support details{font-size:13px;background:#fff;border:1px solid #dfe5da;border-radius:12px;padding:16px 20px}.support p,.support ul{font-size:12px;line-height:1.8}.support summary{cursor:pointer;font-weight:650}.sr-only{position:absolute;clip:rect(0,0,0,0);width:1px;height:1px;overflow:hidden}[hidden]{display:none!important}:focus-visible{outline:3px solid #88a957;outline-offset:3px}@media(max-width:880px){.hero{align-items:start;flex-direction:column;padding-top:30px}.workspace{grid-template-columns:1fr}.preview-card{min-height:320px}}@media(max-width:500px){.top,.hero,.workspace,.support,.footer{padding-left:18px;padding-right:18px}.top{align-items:start}.pill{font-size:10px}.card{padding:18px}.hero-actions{flex-wrap:wrap}.options{gap:10px}h1{letter-spacing:-1px}.sheet-heading{padding:20px 16px}th,td{padding:11px 10px}}
+</style>
+</head><body>
+<header class="top"><div class="brand"><span class="mark" aria-hidden="true">≋</span>TierSheet</div><span id="dataBadge" class="pill">Offline · Files stay on this device</span></header>
+<section class="hero"><div><span class="eyebrow">Wholesale, without the repetitive work</span><h1>One product list.<br>Every price tier, ready to send.</h1><p>Turn a product CSV and your discount rules into clear price lists. Review every tier, then download its PDF and CSV together.</p></div><div class="hero-actions"><button id="sampleButton">Try sample files</button><button id="templateButton">CSV templates ↓</button></div></section>
+<main class="workspace">
+<section class="card" aria-labelledby="inputHeading"><div class="step"><span class="number">1</span><h2 id="inputHeading">Add your files</h2></div><p class="help">UTF-8 CSV · comma, semicolon or tab. Choose a complete product name and the price you want to use.</p>
+<div class="field"><label for="productsFile">Products CSV</label><input id="productsFile" type="file" accept=".csv,.txt,text/csv"><p class="help">SKU, Name, Price — or map WooCommerce export columns below.</p></div>
+<div id="mapping" hidden><div class="field"><label for="skuColumn">SKU column</label><select id="skuColumn"></select></div><div class="options"><div><label for="nameColumn">Product name column</label><select id="nameColumn"></select></div><div><label for="priceColumn">Base unit price column</label><select id="priceColumn"></select></div></div></div>
+<div class="field"><label for="tiersFile">Price tiers CSV</label><input id="tiersFile" type="file" accept=".csv,.txt,text/csv"><p class="help">Tier, DiscountPercent — e.g. Dealer, 10</p></div>
+<details><summary class="help">Optional: specific product prices</summary><div class="field"><label for="overridesFile">Overrides CSV</label><input id="overridesFile" type="file" accept=".csv,.txt,text/csv"><p class="help">Tier, SKU, Price. A specific price takes priority over the tier discount.</p></div></details>
+<div class="divider"></div><div class="step"><span class="number">2</span><h2>Review the prices</h2></div>
+<div class="field"><label for="business">Business heading (optional)</label><input id="business" type="text" maxlength="100" placeholder="Your business name"></div>
+<div class="options"><div><label for="currency">Currency code</label><input id="currency" type="text" value="USD" maxlength="3"></div><div><label for="precision">Decimal places</label><select id="precision"><option value="0">0</option><option value="1">1</option><option value="2" selected>2</option><option value="3">3</option><option value="4">4</option></select></div></div>
+<div class="options"><div><label for="issued">Issue date</label><input id="issued" type="date"></div><div><label for="validUntil">Valid until (optional)</label><input id="validUntil" type="date"></div></div>
+<button id="runButton" class="primary wide">Build price lists</button><p id="status" class="status" role="status" aria-live="polite">Choose your files, or try the sample.</p>
+<div class="notice-box"><strong id="issueSummary" class="help"></strong><ul id="issues"></ul></div>
+</section>
+<section class="card preview-card" aria-labelledby="previewLabel"><div class="preview-top"><div class="step"><span class="number">3</span><h2 id="previewLabel">Preview &amp; export</h2></div><span id="summary" class="summary" hidden></span></div>
+<div id="empty" class="empty"><div class="empty-symbol" aria-hidden="true">≋</div><h2>Clear prices. Less copy and paste.</h2><p>Your preview will appear here. Nothing is uploaded, and no store data is changed.</p></div>
+<div id="results" hidden><div class="field"><label for="tierSelect">Preview price tier</label><select id="tierSelect"></select></div><div class="sheet"><div class="sheet-heading"><h2 id="previewHeading"></h2><p id="previewTier"></p><p id="previewDate"></p></div><table><thead><tr><th>SKU</th><th>Product</th><th>Unit price</th></tr></thead><tbody id="previewRows"></tbody></table></div><p id="previewLimit" class="help"></p>
+<label class="check"><input id="acknowledge" type="checkbox">I checked the mapped price column, discounts and input notices before sharing these prices.</label>
+<label class="check"><input id="includePDF" type="checkbox" checked>Include PDF files. Choose CSV/HTML only for very large lists or long product names.</label>
+<div class="exports"><button id="zipButton" class="primary" disabled>Download all tiers · ZIP</button><button id="csvButton" disabled>This tier · CSV</button><button id="htmlButton" disabled>All tiers · HTML</button></div>
+<p class="help">PDF pages use 150 DPI images and system fonts. Prices are rounded half up at your selected decimal precision. Currency is a label; no exchange conversion is applied.</p></div>
+</section></main>
+<section class="support"><details><summary>File formats, privacy &amp; purchase status</summary><p>Products require unique, non-empty SKUs, names and decimal prices. WooCommerce “Regular price” can be mapped as the price source; sale prices, variations, tax, stock and live customer pricing are not read from your store. Discounts are percentages, not markups. Explicit overrides take priority.</p><p>Files stay in this tab's memory. Reloading clears the files and outputs. No account, telemetry or external font is used. ZIP output includes all price-tier CSVs, optional PDFs, a price-source audit and an HTML preview. CSV formula-like text is prefixed for spreadsheet safety; outputs are reports for sharing.</p><p id="purchaseStatus">Sales are not open. Proposed price: $19 one-time for the standalone batch edition. This is a local functional validation build.</p><a id="buyLink" hidden rel="noopener noreferrer" target="_blank">Open checkout</a><p>The free WordPress edition creates a complete single price list without an expiry or row-based payment lock.</p><p><a href="legal.html">Privacy, terms &amp; refund-policy draft</a></p></details></section>
+<footer class="footer"><span>TierSheet 0.1.0 · Functional validation build</span><span>Product &amp; commercial claims: see project research</span></footer>
+<script>/* Original shared code. Dual-licensed: GPL-2.0-or-later for the free
+ * WordPress edition; separately licensed as part of the owner's standalone
+ * edition. See LICENSES.md. No third-party runtime dependencies. */
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.TierSheetCommon = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function () {
+  'use strict';
+  class InputError extends Error {
+    constructor(code, message, row) {
+      super(message); this.name = 'InputError'; this.code = code; this.row = row || null;
+    }
+  }
+  function detectDelimiter(text) {
+    const counts = { ',': 0, ';': 0, '\t': 0 };
+    let quoted = false;
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (c === '"') {
+        if (quoted && text[i + 1] === '"') i++;
+        else quoted = !quoted;
+      } else if (!quoted) {
+        if (c === '\n' || c === '\r') break;
+        if (Object.hasOwn(counts, c)) counts[c]++;
+      }
+    }
+    return Object.entries(counts).sort((a, b) => b[1] - a[1])[0][0];
+  }
+  function parseCSV(input, options) {
+    options = options || {};
+    if (typeof input !== 'string') throw new InputError('CSV_TYPE', 'CSV input must be text.');
+    let text = input.replace(/^\uFEFF/, '');
+    if (!text.trim()) throw new InputError('CSV_EMPTY', 'The CSV is empty.');
+    if (text.length > 25 * 1024 * 1024) throw new InputError('CSV_SIZE', 'Use a UTF-8 file below 25 MB.');
+    if (text.includes('\0') || text.includes('\uFFFD')) throw new InputError('CSV_ENCODING', 'Invalid text encoding. Export a UTF-8 CSV.');
+    const delimiter = !options.delimiter || options.delimiter === 'auto' ? detectDelimiter(text) : options.delimiter;
+    if (![',', ';', '\t'].includes(delimiter)) throw new InputError('CSV_DELIMITER', 'Choose comma, semicolon or tab.');
+    const maxRows = options.maxRows || 20000;
+    const maxColumns = options.maxColumns || 100;
+    let rows = [], fields = [], value = '', state = 'start', line = 1, startLine = 1;
+    function cell() {
+      fields.push(value); value = ''; state = 'start';
+      if (fields.length > maxColumns) throw new InputError('CSV_COLUMNS', 'Too many columns (maximum 100).', line);
+    }
+    function record() {
+      cell();
+      if (!(fields.length === 1 && fields[0] === '')) rows.push({ fields, row: startLine });
+      fields = [];
+      if (rows.length > maxRows + 1) throw new InputError('CSV_ROWS', 'Too many records for this local tool (maximum ' + maxRows + ').', startLine);
+    }
+    for (let i = 0; i < text.length; i++) {
+      const c = text[i];
+      if (state === 'quoted') {
+        if (c === '"') {
+          if (text[i + 1] === '"') { value += '"'; i++; }
+          else state = 'closed';
+        } else if (c === '\r' || c === '\n') {
+          if (c === '\r' && text[i + 1] === '\n') i++;
+          value += '\n'; line++;
+        } else value += c;
+      } else if (c === delimiter) cell();
+      else if (c === '\r' || c === '\n') {
+        record();
+        if (c === '\r' && text[i + 1] === '\n') i++;
+        line++; startLine = line;
+      } else if (state === 'closed') {
+        throw new InputError('CSV_QUOTE', 'Unexpected text after a closing quote.', line);
+      } else if (c === '"') {
+        if (state !== 'start') throw new InputError('CSV_QUOTE', 'Quote inside an unquoted field.', line);
+        state = 'quoted';
+      } else { value += c; state = 'plain'; }
+      if (value.length > 10000) throw new InputError('CSV_FIELD', 'A field exceeds 10,000 characters.', line);
+    }
+    if (state === 'quoted') throw new InputError('CSV_QUOTE', 'Unclosed quoted field.', startLine);
+    if (value !== '' || fields.length || state !== 'start') record();
+    if (!rows.length) throw new InputError('CSV_EMPTY', 'No header was found.');
+    const header = rows.shift();
+    const headers = header.fields.map(x => x.trim());
+    if (headers.some(x => !x)) throw new InputError('CSV_HEADER', 'All column headers must be non-empty.', header.row);
+    const normalized = headers.map(x => x.toLowerCase());
+    if (new Set(normalized).size !== headers.length) throw new InputError('CSV_HEADER', 'Duplicate column headers.', header.row);
+    const records = rows.map(r => {
+      if (r.fields.length !== headers.length) throw new InputError('CSV_WIDTH', 'Expected ' + headers.length + ' columns, found ' + r.fields.length + '.', r.row);
+      const values = Object.create(null);
+      headers.forEach((h, i) => { values[h] = r.fields[i]; });
+      return { values, row: r.row };
+    });
+    return { headers, records, delimiter };
+  }
+  function parseMoney(input, precision) {
+    if (!Number.isInteger(precision) || precision < 0 || precision > 4) throw new InputError('PRECISION', 'Decimal places must be an integer from 0 to 4.');
+    const text = String(input).trim();
+    if (!/^\d{1,12}(?:\.\d{1,4})?$/.test(text)) throw new InputError('PRICE_FORMAT', 'Use a non-negative decimal price, a dot separator, no currency symbol or thousands separator.');
+    const parts = text.split('.');
+    const fraction = parts[1] || '';
+    if (fraction.length > precision && /[1-9]/.test(fraction.slice(precision))) throw new InputError('PRICE_PRECISION', 'The price has more than ' + precision + ' decimal places.');
+    return BigInt(parts[0]) * (10n ** BigInt(precision)) + BigInt((fraction.slice(0, precision).padEnd(precision, '0')) || '0');
+  }
+  function formatMoney(value, precision) {
+    if (typeof value !== 'bigint' || value < 0n) throw new InputError('PRICE_FORMAT', 'Price must be a non-negative integer in minor units.');
+    const scale = 10n ** BigInt(precision);
+    return (value / scale).toString() + (precision ? '.' + (value % scale).toString().padStart(precision, '0') : '');
+  }
+  function findHeader(table, aliases, explicit, field) {
+    if (explicit) {
+      if (!table.headers.includes(explicit)) throw new InputError('MAPPING', 'Column not found: ' + explicit);
+      return explicit;
+    }
+    const found = table.headers.filter(h => aliases.includes(h.toLowerCase()));
+    if (found.length !== 1) throw new InputError('MAPPING', found.length ? 'Choose one column for ' + field + '; multiple candidates were found.' : 'Choose a column for ' + field + '.');
+    return found[0];
+  }
+  function normalizeProducts(table, options) {
+    options = options || {};
+    const precision = options.precision === undefined ? 2 : options.precision;
+    const mapping = options.mapping || {};
+    const keys = {
+      sku: findHeader(table, ['sku', 'variant sku', 'stock code', '货号'], mapping.sku, 'SKU'),
+      name: findHeader(table, ['name', 'title', 'product name', '商品名称'], mapping.name, 'Name'),
+      price: findHeader(table, ['price', 'regular price', 'variant price', '单价'], mapping.price, 'Price')
+    };
+    if (new Set(Object.values(keys)).size !== 3) throw new InputError('MAPPING', 'SKU, name and price must use different columns.');
+    if (!table.records.length) throw new InputError('PRODUCTS_EMPTY', 'Add at least one product record.');
+    const products = [], issues = [], exact = new Map(), relaxed = new Map();
+    function issue(severity, code, row, field, message) { issues.push({severity, code, row, field, message}); }
+    for (const record of table.records) {
+      const originalSKU = record.values[keys.sku];
+      const sku = originalSKU.trim();
+      const name = record.values[keys.name].trim();
+      if (!sku) { issue('error', 'SKU_EMPTY', record.row, keys.sku, 'SKU is empty.'); continue; }
+      if (sku.length > 100 || /[\r\n\x00-\x1f]/.test(sku)) { issue('error', 'SKU_INVALID', record.row, keys.sku, 'Use an SKU under 101 characters without control characters.'); continue; }
+      if (sku !== originalSKU) issue('warning', 'SKU_SPACE', record.row, keys.sku, 'Outer SKU whitespace was removed; check the original identifier.');
+      if (!name) issue('error', 'NAME_EMPTY', record.row, keys.name, 'Product name is empty; map a complete name column.');
+      if (name.length > 300) issue('error', 'NAME_LENGTH', record.row, keys.name, 'Product name exceeds 300 characters.');
+      if (/[\x00-\x08\x0b\x0c\x0e-\x1f]/.test(name)) issue('error', 'NAME_CONTROL', record.row, keys.name, 'Product name contains control characters.');
+      if (exact.has(sku)) issue('error', 'SKU_DUPLICATE', record.row, keys.sku, 'Duplicate SKU; first appears at row ' + exact.get(sku) + '.');
+      else exact.set(sku, record.row);
+      const fold = sku.toLowerCase();
+      if (relaxed.has(fold) && relaxed.get(fold).sku !== sku) issue('warning', 'SKU_CASE', record.row, keys.sku, 'Another SKU differs only in letter case; verify both identifiers.');
+      else relaxed.set(fold, {sku, row: record.row});
+      let price;
+      try { price = parseMoney(record.values[keys.price], precision); }
+      catch (e) { issue('error', e.code, record.row, keys.price, e.message); continue; }
+      if (price === 0n) issue('warning', 'PRICE_ZERO', record.row, keys.price, 'Zero unit price; confirm this is intended.');
+      if (/^\s*[=+@-]/.test(sku) || /^\s*[=+@-]/.test(name)) issue('warning', 'CSV_FORMULA', record.row, keys.name, 'Spreadsheet-like text is escaped in CSV output.');
+      products.push({sku, name, price, sourceRow:record.row});
+    }
+    return {products, issues, mapping: keys, precision};
+  }
+  function safeCell(value) {
+    let text = String(value === null || value === undefined ? '' : value);
+    if (/^[\s\uFEFF]*[=+@-]/.test(text) || /^[\t\r\n]/.test(text)) text = "'" + text;
+    return '"' + text.replace(/"/g, '""') + '"';
+  }
+  function toCSV(rows) { return '\uFEFF' + rows.map(row => row.map(safeCell).join(',')).join('\r\n') + '\r\n'; }
+  function escapeHTML(value) {
+    return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+  function normalizeCurrency(value) {
+    const v = String(value || '').trim().toUpperCase();
+    if (!/^[A-Z]{3}$/.test(v)) throw new InputError('CURRENCY', 'Use a three-letter currency code, such as USD, EUR or CNY.');
+    return v;
+  }
+  function slug(name, index) {
+    const simple = String(name).normalize('NFKD').replace(/[\u0300-\u036f]/g,'').toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,'').slice(0,48);
+    return String(index + 1).padStart(2,'0') + '-' + (simple || 'price-tier');
+  }
+  return {InputError,parseCSV,parseMoney,formatMoney,findHeader,normalizeProducts,safeCell,toCSV,escapeHTML,normalizeCurrency,slug};
+});
+</script><script>/* Original standalone batch edition. See LICENSES.md. */
+(function (root, factory) {
+  const api = factory(typeof module === 'object' && module.exports ? require('./common.js') : root.TierSheetCommon);
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  else root.TierSheetPro = api;
+})(typeof globalThis !== 'undefined' ? globalThis : this, function (C) {
+  'use strict';
+  function parseDiscount(input) {
+    const t = String(input).trim();
+    if (!/^\d{1,3}(?:\.\d{1,2})?$/.test(t)) throw new C.InputError('DISCOUNT', 'Use a discount between 0 and 100 with at most two decimal places.');
+    const units = C.parseMoney(t, 2);
+    if (units > 10000n) throw new C.InputError('DISCOUNT', 'Discount cannot exceed 100%.');
+    return Number(units);
+  }
+  function discounted(price, basisPoints) {
+    if (typeof price !== 'bigint' || price < 0n || !Number.isInteger(basisPoints) || basisPoints < 0 || basisPoints > 10000) throw new C.InputError('DISCOUNT', 'Invalid discount inputs.');
+    return (price * BigInt(10000 - basisPoints) + 5000n) / 10000n;
+  }
+  function loadTiers(table) {
+    const nameKey = C.findHeader(table, ['tier'], null, 'Tier');
+    const discountKey = C.findHeader(table, ['discountpercent', 'discount percent', 'discount_pct'], null, 'DiscountPercent');
+    if (!table.records.length) throw new C.InputError('TIERS_EMPTY', 'Add at least one price tier.');
+    if (table.records.length > 20) throw new C.InputError('TIERS_LIMIT', 'This local memory-safe version supports at most 20 tiers per export.');
+    const seen = new Set();
+    return table.records.map((r, index) => {
+      const name = r.values[nameKey].trim();
+      if (!name || name.length > 80 || /[\x00-\x1f]/.test(name)) throw new C.InputError('TIER_NAME', 'Use a tier name of 1–80 characters without control characters.', r.row);
+      if (seen.has(name)) throw new C.InputError('TIER_DUPLICATE', 'Duplicate price tier: ' + name, r.row);
+      seen.add(name);
+      let basisPoints;
+      try { basisPoints = parseDiscount(r.values[discountKey]); } catch(e) { e.row=r.row; throw e; }
+      return {name, basisPoints, fileStem:C.slug(name, index), sourceRow:r.row};
+    });
+  }
+  function buildPriceLists(productResult, tiers, overrideTable, options) {
+    options = options || {};
+    const currency = C.normalizeCurrency(options.currency || 'USD');
+    const precision = productResult.precision;
+    const issues = productResult.issues.slice();
+    const tierNames = new Set(tiers.map(t=>t.name));
+    const productMap = new Map(productResult.products.map(p=>[p.sku,p]));
+    const overrides = new Map();
+    if (overrideTable) {
+      const tk = C.findHeader(overrideTable,['tier'],null,'Tier');
+      const sk = C.findHeader(overrideTable,['sku'],null,'SKU');
+      const pk = C.findHeader(overrideTable,['price'],null,'Price');
+      for (const r of overrideTable.records) {
+        const tier = r.values[tk].trim(), sku = r.values[sk].trim();
+        const key = JSON.stringify([tier,sku]);
+        let problem;
+        if (!tierNames.has(tier)) problem = 'Unknown tier: ' + tier;
+        else if (!productMap.has(sku)) problem = 'Unknown SKU: ' + sku;
+        else if (overrides.has(key)) problem = 'Duplicate tier/SKU override.';
+        if (problem) { issues.push({severity:'error',code:'OVERRIDE_REFERENCE',row:r.row,field:'Tier/SKU',source:'overrides',message:problem}); continue; }
+        try {
+          const value=C.parseMoney(r.values[pk],precision);
+          overrides.set(key,value);
+          if (value===0n) issues.push({severity:'warning',code:'OVERRIDE_ZERO',row:r.row,field:pk,source:'overrides',message:'Zero override price; confirm it is intended.'});
+        } catch(e) {issues.push({severity:'error',code:e.code,row:r.row,field:pk,source:'overrides',message:e.message});}
+      }
+    }
+    const hasErrors = issues.some(i=>i.severity==='error');
+    const lists = hasErrors ? [] : tiers.map(t => {
+      const lines = productResult.products.map(p=>{
+        const key = JSON.stringify([t.name,p.sku]);
+        const overridden = overrides.has(key);
+        const price = overridden ? overrides.get(key) : discounted(p.price,t.basisPoints);
+        return {sku:p.sku,name:p.name,price,basePrice:p.price,overridden,sourceRow:p.sourceRow};
+      });
+      if(t.basisPoints===10000) issues.push({severity:'warning',code:'TIER_FREE',row:t.sourceRow,field:'DiscountPercent',source:'tiers',message:'This tier discounts all non-overridden products to zero.'});
+      return {...t,currency,precision,lines};
+    });
+    return {lists,issues,hasErrors,currency,precision,productCount:productResult.products.length,overrideCount:overrides.size};
+  }
+  function listCSV(list) {
+    return C.toCSV([['SKU','Name','Unit price','Currency','Price tier','Price source'],...list.lines.map(p=>[p.sku,p.name,C.formatMoney(p.price,list.precision),list.currency,list.name,p.overridden?'Override':'Tier discount'])]);
+  }
+  function auditCSV(result) {
+    return C.toCSV([['Tier','SKU','Input row','Base unit price','Final unit price','Currency','Source'],...result.lists.flatMap(t=>t.lines.map(p=>[t.name,p.sku,p.sourceRow,C.formatMoney(p.basePrice,t.precision),C.formatMoney(p.price,t.precision),t.currency,p.overridden?'Override':'Discount']))]);
+  }
+  return {parseDiscount,discounted,loadTiers,buildPriceLists,listCSV,auditCSV};
+});
+</script><script>/* Original archive/PDF writer; dual-licensed shared code. See LICENSES.md. */
+(function(root,factory){
+  const api=factory();
+  if(typeof module==='object'&&module.exports)module.exports=api;else root.TierSheetArchive=api;
+})(typeof globalThis!=='undefined'?globalThis:this,function(){
+  'use strict';
+  const encoder=new TextEncoder();
+  function bytes(v){return typeof v==='string'?encoder.encode(v):v instanceof Uint8Array?v:new Uint8Array(v);}
+  function concat(parts){
+    const size=parts.reduce((n,p)=>n+p.length,0),out=new Uint8Array(size);
+    let cursor=0;for(const p of parts){out.set(p,cursor);cursor+=p.length;}return out;
+  }
+  const crcTable=Array.from({length:256},(_,n)=>{for(let i=0;i<8;i++)n=(n&1)?0xEDB88320^(n>>>1):n>>>1;return n>>>0;});
+  function crc32(data){let c=0xFFFFFFFF;for(const b of bytes(data))c=crcTable[(c^b)&255]^(c>>>8);return(c^0xFFFFFFFF)>>>0;}
+  function zip(files,date){
+    if(!Array.isArray(files)||!files.length||files.length>65535)throw new Error('ZIP file count is invalid.');
+    date=date||new Date();
+    const year=Math.max(1980,Math.min(2107,date.getFullYear()));
+    const day=((year-1980)<<9)|((date.getMonth()+1)<<5)|date.getDate();
+    const time=(date.getHours()<<11)|(date.getMinutes()<<5)|Math.floor(date.getSeconds()/2);
+    const local=[],central=[],names=new Set();let offset=0;
+    for(const f of files){
+      if(typeof f.name!=='string'||!/^[-a-zA-Z0-9_.]+$/.test(f.name)||f.name.includes('..')||f.name.length>120||names.has(f.name))throw new Error('Unsafe or duplicate ZIP filename.');
+      names.add(f.name);
+      const name=bytes(f.name),data=bytes(f.data),crc=crc32(data);
+      if(data.length>0xFFFFFFFF||offset>0xFFFFFFFF)throw new Error('ZIP exceeds supported size.');
+      const l=new Uint8Array(30),lv=new DataView(l.buffer);
+      lv.setUint32(0,0x04034B50,true);lv.setUint16(4,20,true);lv.setUint16(6,0x800,true);
+      lv.setUint16(10,time,true);lv.setUint16(12,day,true);lv.setUint32(14,crc,true);
+      lv.setUint32(18,data.length,true);lv.setUint32(22,data.length,true);lv.setUint16(26,name.length,true);
+      local.push(l,name,data);
+      const c=new Uint8Array(46),cv=new DataView(c.buffer);
+      cv.setUint32(0,0x02014B50,true);cv.setUint16(4,20,true);cv.setUint16(6,20,true);cv.setUint16(8,0x800,true);
+      cv.setUint16(12,time,true);cv.setUint16(14,day,true);cv.setUint32(16,crc,true);
+      cv.setUint32(20,data.length,true);cv.setUint32(24,data.length,true);cv.setUint16(28,name.length,true);
+      cv.setUint32(42,offset,true);central.push(c,name);offset+=l.length+name.length+data.length;
+    }
+    const directory=concat(central),end=new Uint8Array(22),v=new DataView(end.buffer);
+    v.setUint32(0,0x06054B50,true);v.setUint16(8,files.length,true);v.setUint16(10,files.length,true);
+    v.setUint32(12,directory.length,true);v.setUint32(16,offset,true);
+    return concat([...local,directory,end]);
+  }
+  function imagePDF(pages){
+    if(!Array.isArray(pages)||!pages.length||pages.length>100)throw new Error('PDF needs 1–100 pages.');
+    const objects=[];
+    objects[1]=bytes('<< /Type /Catalog /Pages 2 0 R >>');
+    objects[2]=bytes('<< /Type /Pages /Count '+pages.length+' /Kids ['+pages.map((_,i)=>(3+3*i)+' 0 R').join(' ')+'] >>');
+    pages.forEach((p,i)=>{
+      const jpeg=bytes(p.jpeg);
+      if(jpeg.length<4||jpeg[0]!==255||jpeg[1]!==216||jpeg[jpeg.length-2]!==255||jpeg[jpeg.length-1]!==217)throw new Error('PDF page is not a complete JPEG.');
+      if(!Number.isInteger(p.width)||!Number.isInteger(p.height)||p.width<1||p.height<1||p.width>10000||p.height>10000)throw new Error('Invalid PDF image dimensions.');
+      const page=3+3*i,img=page+1,stream=page+2;
+      objects[page]=bytes('<< /Type /Page /Parent 2 0 R /MediaBox [0 0 595.28 841.89] /Resources << /XObject << /Im0 '+img+' 0 R >> >> /Contents '+stream+' 0 R >>');
+      objects[img]=concat([bytes('<< /Type /XObject /Subtype /Image /Width '+p.width+' /Height '+p.height+' /ColorSpace /DeviceRGB /BitsPerComponent 8 /Filter /DCTDecode /Length '+jpeg.length+' >>\nstream\n'),jpeg,bytes('\nendstream')]);
+      const content=bytes('q\n595.28 0 0 841.89 0 0 cm\n/Im0 Do\nQ\n');
+      objects[stream]=concat([bytes('<< /Length '+content.length+' >>\nstream\n'),content,bytes('endstream')]);
+    });
+    const pieces=[bytes('%PDF-1.4\n%\xE2\xE3\xCF\xD3\n')],offsets=[0];let total=pieces[0].length;
+    for(let n=1;n<objects.length;n++){
+      const piece=concat([bytes(n+' 0 obj\n'),objects[n],bytes('\nendobj\n')]);
+      offsets[n]=total;total+=piece.length;pieces.push(piece);
+    }
+    const start=total;
+    const xref='xref\n0 '+objects.length+'\n0000000000 65535 f \n'+offsets.slice(1).map(n=>String(n).padStart(10,'0')+' 00000 n \n').join('')+'trailer\n<< /Size '+objects.length+' /Root 1 0 R >>\nstartxref\n'+start+'\n%%EOF\n';
+    pieces.push(bytes(xref));return concat(pieces);
+  }
+  return{bytes,concat,crc32,zip,imagePDF};
+});
+</script><script>/* Original browser UI/PDF rendering shared by the two editions. */
+(function(root){
+  'use strict';
+  const C=root.TierSheetCommon,A=root.TierSheetArchive;
+  function byId(id){return document.getElementById(id);}
+  function text(id,value){const el=byId(id);if(el)el.textContent=value;}
+  function download(name,data,mime){
+    const url=URL.createObjectURL(new Blob([data],{type:mime||'application/octet-stream'}));
+    const link=document.createElement('a');link.href=url;link.download=name;link.click();
+    setTimeout(()=>URL.revokeObjectURL(url),1500);
+  }
+  async function fileText(file){
+    if(!file)throw new C.InputError('FILE','Select a CSV file first.');
+    if(file.size>25*1024*1024)throw new C.InputError('CSV_SIZE','Use a file below 25 MB.');
+    try{return new TextDecoder('utf-8',{fatal:true}).decode(await file.arrayBuffer());}
+    catch(e){if(e instanceof C.InputError)throw e;throw new C.InputError('CSV_ENCODING','This file is not valid UTF-8. Export a UTF-8 CSV.');}
+  }
+  function renderIssues(issues){
+    const box=byId('issues');box.replaceChildren();
+    const errors=issues.filter(i=>i.severity==='error').length;
+    text('issueSummary',issues.length?(errors+' error(s), '+(issues.length-errors)+' notice(s)'):'No input problems found.');
+    for(const item of issues.slice(0,100)){
+      const li=document.createElement('li');li.className=item.severity;
+      li.textContent=(item.source?item.source+' · ':'')+'row '+item.row+' · '+item.field+' — '+item.message;box.appendChild(li);
+    }
+    if(issues.length>100){const li=document.createElement('li');li.textContent='Showing the first 100 items. Resolve these and run again.';box.appendChild(li);}
+  }
+  function mappingOptions(table){
+    const aliases={skuColumn:['sku','variant sku','stock code','货号'],nameColumn:['name','title','product name','商品名称'],priceColumn:['price','regular price','variant price','单价']};
+    for(const [id,names]of Object.entries(aliases)){
+      const select=byId(id);select.replaceChildren();
+      const empty=document.createElement('option');empty.value='';empty.textContent='Choose column';select.appendChild(empty);
+      for(const h of table.headers){const option=document.createElement('option');option.value=h;option.textContent=h;select.appendChild(option);}
+      const matches=table.headers.filter(h=>names.includes(h.toLowerCase()));
+      select.value=matches.length===1?matches[0]:'';
+    }
+    byId('mapping').hidden=false;
+  }
+  function chosenMapping(){
+    const result={sku:byId('skuColumn').value,name:byId('nameColumn').value,price:byId('priceColumn').value};
+    if(Object.values(result).some(x=>!x))throw new C.InputError('MAPPING','Select SKU, name and price columns.');
+    return result;
+  }
+  function metadata(){
+    const business=byId('business').value.trim();
+    if(business.length>100)throw new C.InputError('BUSINESS','Business heading must be under 101 characters.');
+    const issued=byId('issued').value,until=byId('validUntil').value;
+    for(const date of[issued,until]){
+      if(date&&(!/^\d{4}-\d{2}-\d{2}$/.test(date)||new Date(date+'T00:00:00Z').toISOString().slice(0,10)!==date))throw new C.InputError('DATE','Choose a valid date.');
+    }
+    if(issued&&until&&until<issued)throw new C.InputError('DATE','Valid-until date is before issue date.');
+    return{business,issued,until};
+  }
+  function renderPreview(list,meta){
+    const tbody=byId('previewRows');tbody.replaceChildren();
+    text('previewHeading',meta.business||'Wholesale price list');
+    text('previewTier',list.name+' · '+list.currency);
+    text('previewDate',(meta.issued?'Issued '+meta.issued:'')+(meta.until?' · Valid until '+meta.until:''));
+    for(const p of list.lines.slice(0,60)){
+      const tr=document.createElement('tr');
+      for(const value of[p.sku,p.name,C.formatMoney(p.price,list.precision)]){
+        const td=document.createElement('td');td.textContent=value;tr.appendChild(td);
+      }
+      tbody.appendChild(tr);
+    }
+    text('previewLimit',list.lines.length>60?'Preview shows 60 rows; export includes all '+list.lines.length+' rows.':'All '+list.lines.length+' products shown.');
+    byId('results').hidden=false;
+  }
+  function htmlReport(lists,meta,issues){
+    const e=C.escapeHTML;
+    return '<!doctype html><html lang="en"><meta charset="utf-8"><meta http-equiv="Content-Security-Policy" content="default-src \'none\'; style-src \'unsafe-inline\'; img-src data:"><title>TierSheet price lists</title><style>body{font:14px system-ui,sans-serif;color:#17312b;max-width:1000px;margin:40px auto;padding:0 24px}section{break-before:page}table{width:100%;border-collapse:collapse}td,th{padding:10px;border-bottom:1px solid #ddd;text-align:left}td:last-child,th:last-child{text-align:right}small{color:#576760}li{margin:8px 0}@media print{body{margin:0}.screen{display:none}}</style><h1>'+e(meta.business||'Wholesale price lists')+'</h1><p>'+e('Issued '+meta.issued+(meta.until?' · Valid until '+meta.until:''))+'</p><p class="screen">Prices use the selected source column, tier discount and explicit overrides. No currency conversion is performed. CSV files are spreadsheet-safe reports.</p>'+(issues.length?'<aside class="screen"><h2>Input notices</h2><ul>'+issues.map(i=>'<li>'+e((i.source||'products')+' row '+i.row+' — '+i.message)+'</li>').join('')+'</ul></aside>':'')+lists.map(l=>'<section><h2>'+e(l.name+' · '+l.currency)+'</h2><table><thead><tr><th>SKU</th><th>Product</th><th>Unit price</th></tr></thead><tbody>'+l.lines.map(p=>'<tr><td>'+e(p.sku)+'</td><td>'+e(p.name)+'</td><td>'+e(C.formatMoney(p.price,l.precision))+'</td></tr>').join('')+'</tbody></table></section>').join('')+'<p><small>Generated locally with TierSheet 0.1.0. Check the preview before sharing.</small></p></html>';
+  }
+  function wrapped(ctx,text,maxWidth){
+    const lines=[];let line='';
+    for(const character of String(text).replace(/\s+/g,' ')){
+      const candidate=line+character;
+      if(ctx.measureText(candidate).width>maxWidth&&line){lines.push(line);line=character;}else line=candidate;
+    }
+    if(line)lines.push(line);return lines;
+  }
+  async function renderPDF(list,meta,progress){
+    const perPage=24,total=Math.ceil(list.lines.length/perPage);
+    if(!total||total>100)throw new Error('PDF export supports up to 100 pages per file. Use CSV-only export for larger lists.');
+    const canvas=document.createElement('canvas');canvas.width=1240;canvas.height=1754;
+    const ctx=canvas.getContext('2d',{alpha:false});
+    if(!ctx)throw new Error('Canvas is unavailable; use HTML/CSV export.');
+    const pages=[];
+    for(let page=0;page<total;page++){
+      ctx.fillStyle='#ffffff';ctx.fillRect(0,0,canvas.width,canvas.height);
+      ctx.fillStyle='#123b2e';ctx.fillRect(0,0,canvas.width,18);
+      ctx.fillStyle='#173b2f';ctx.font='bold 42px Arial, sans-serif';
+      const heading=wrapped(ctx,meta.business||'Wholesale price list',1080);
+      if(heading.length>2)throw new Error('Business heading is too wide for the PDF. Shorten it.');
+      heading.forEach((s,i)=>ctx.fillText(s,80,92+i*45));
+      ctx.font='25px Arial, sans-serif';
+      const tierHeading=list.name+' · '+list.currency;
+      if(ctx.measureText(tierHeading).width>1080)throw new Error('Price-tier name is too wide for the PDF. Shorten the tier name or use CSV/HTML-only export.');
+      ctx.fillText(tierHeading,80,190);
+      ctx.fillStyle='#596a62';ctx.font='19px Arial, sans-serif';
+      ctx.fillText((meta.issued?'Issued '+meta.issued:'')+(meta.until?'   |   Valid until '+meta.until:''),80,226);
+      ctx.fillStyle='#edf3ee';ctx.fillRect(80,253,1080,42);
+      ctx.fillStyle='#173b2f';ctx.font='bold 20px Arial, sans-serif';
+      ctx.fillText('SKU',92,281);ctx.fillText('Product',330,281);
+      ctx.textAlign='right';ctx.fillText('Unit price · '+list.currency,1148,281);ctx.textAlign='left';
+      const rows=list.lines.slice(page*perPage,(page+1)*perPage);
+      for(let r=0;r<rows.length;r++){
+        const item=rows[r],y=326+r*55;
+        ctx.fillStyle='#dfe7e1';ctx.fillRect(80,y+34,1080,1);
+        ctx.fillStyle='#344a3e';ctx.font='17px Arial, sans-serif';
+        const skuLines=wrapped(ctx,item.sku,225);
+        ctx.font='22px Arial, sans-serif';const nameLines=wrapped(ctx,item.name,560);
+        if(skuLines.length>2||nameLines.length>2)throw new Error('Text does not fit PDF rows (SKU '+item.sku+'). Shorten text or select CSV/HTML-only export.');
+        ctx.font='17px Arial, sans-serif';skuLines.forEach((s,i)=>ctx.fillText(s,92,y-4+i*21));
+        ctx.font='22px Arial, sans-serif';nameLines.forEach((s,i)=>ctx.fillText(s,330,y-4+i*24));
+        ctx.font='22px Arial, sans-serif';const priceText=C.formatMoney(item.price,list.precision);
+        if(ctx.measureText(priceText).width>235)throw new Error('Price does not fit the PDF column (SKU '+item.sku+'). Use CSV/HTML-only export.');
+        ctx.textAlign='right';ctx.fillText(priceText,1148,y+4);ctx.textAlign='left';
+      }
+      ctx.fillStyle='#66766c';ctx.font='18px Arial, sans-serif';
+      ctx.fillText('Price list · '+list.lines.length+' products',80,1679);
+      ctx.textAlign='right';ctx.fillText((page+1)+' / '+total,1160,1679);ctx.textAlign='left';
+      const blob=await new Promise(resolve=>canvas.toBlob(resolve,'image/jpeg',0.92));
+      if(!blob)throw new Error('PDF image rendering failed.');
+      pages.push({jpeg:new Uint8Array(await blob.arrayBuffer()),width:canvas.width,height:canvas.height});
+      if(progress)progress(page+1,total);
+      await new Promise(resolve=>setTimeout(resolve,0));
+    }
+    return A.imagePDF(pages);
+  }
+  function initializeDates(){
+    const d=new Date();
+    byId('issued').value=d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0');
+  }
+  root.TierSheetUI={byId,text,download,fileText,renderIssues,mappingOptions,chosenMapping,metadata,renderPreview,htmlReport,renderPDF,initializeDates};
+})(globalThis);
+</script><script>/* Public checkout metadata only. Never place API keys in this file. */
+globalThis.TierSheetConfig = Object.freeze({
+  paymentMode: 'off',
+  checkoutUrl: '',
+  sellerName: '',
+  supportEmail: ''
+});
+</script><script>/* Original standalone UI. No live payment is enabled by default. */
+(function(){
+  'use strict';
+  const C=TierSheetCommon,P=TierSheetPro,A=TierSheetArchive,U=TierSheetUI,$=U.byId;
+  let productsText='',tiersText='',overridesText='',table=null,result=null,meta=null,revision=0,sample=false,busy=false;
+  function status(message,error){U.text('status',message);$('status').classList.toggle('error',!!error);}
+  function errorMessage(e){return(e.row?'Row '+e.row+' · ':'')+e.message;}
+  function invalidate(){
+    revision++;result=null;$('results').hidden=true;$('empty').hidden=false;$('summary').hidden=true;
+    U.renderIssues([]);setExports(false);
+  }
+  function setExports(on){for(const id of['zipButton','csvButton','htmlButton'])$(id).disabled=!on;}
+  function updateExports(){setExports(!!result&&!result.hasErrors&&$('acknowledge').checked&&!busy);}
+  function setBusy(value){busy=value;for(const id of['productsFile','tiersFile','overridesFile','sampleButton','templateButton','runButton','skuColumn','nameColumn','priceColumn','business','currency','precision','issued','validUntil','tierSelect','includePDF'])$(id).disabled=value;updateExports();}
+  function showBadge(){U.text('dataBadge',sample?'Sample data · Not customer activity':'Offline · Files stay on this device');$('dataBadge').classList.toggle('sample',sample);}
+  async function loadFile(kind){
+    const myRevision=++revision;
+    const file=$(kind+'File').files[0];
+    if(!file){
+      if(kind==='products'){productsText='';table=null;$('mapping').hidden=true;}
+      if(kind==='tiers')tiersText='';
+      if(kind==='overrides')overridesText='';
+      invalidate();status('File removed. Build again after selecting your files.');return;
+    }
+    invalidate();const currentRevision=revision;sample=false;showBadge();
+    setBusy(true);
+    try{
+      const content=await U.fileText(file);
+      if(currentRevision!==revision)return;
+      const parsed=C.parseCSV(content);
+      if(kind==='products'){productsText=content;table=parsed;U.mappingOptions(table);}
+      if(kind==='tiers')tiersText=content;
+      if(kind==='overrides')overridesText=content;
+      status(file.name+' loaded. Nothing uploaded.');
+    }catch(e){
+      if(kind==='products'){productsText='';table=null;$('mapping').hidden=true;}
+      if(kind==='tiers')tiersText='';
+      if(kind==='overrides')overridesText='';
+      status(errorMessage(e),true);
+    }finally{setBusy(false);}
+  }
+  for(const kind of['products','tiers','overrides'])$(kind+'File').addEventListener('change',()=>loadFile(kind));
+  for(const id of['skuColumn','nameColumn','priceColumn','business','currency','precision','issued','validUntil'])$(id).addEventListener('input',()=>{invalidate();status('Options changed. Build again to update the prices.');});
+  $('acknowledge').addEventListener('change',updateExports);
+  $('sampleButton').addEventListener('click',()=>{
+    invalidate();sample=true;showBadge();for(const id of['productsFile','tiersFile','overridesFile'])$(id).value='';
+    productsText='SKU,Name,Price\nMUG-01,Stoneware mug,12.50\nTEA-02,Loose leaf tea,8.00\nTIN-03,Gift tin,19.95\nBAG-04,Cotton tote,10.00\nSPOON-05,Bamboo spoon,4.25\n';
+    tiersText='Tier,DiscountPercent\nRetail,0\nDealer,10\nWholesale,20\n';
+    overridesText='Tier,SKU,Price\nWholesale,TEA-02,6.00\n';
+    table=C.parseCSV(productsText);U.mappingOptions(table);$('business').value='Sample Supply';$('currency').value='USD';$('precision').value='2';$('acknowledge').checked=false;
+    status('Sample files loaded: 5 products, 3 tiers and 1 specific price. Click Build price lists.');
+  });
+  $('templateButton').addEventListener('click',()=>{
+    U.download('tiersheet-csv-templates.zip',A.zip([
+      {name:'products.csv',data:'SKU,Name,Price\r\nMUG-01,Sample mug,12.50\r\n'},
+      {name:'tiers.csv',data:'Tier,DiscountPercent\r\nRetail,0\r\nDealer,10\r\n'},
+      {name:'overrides.csv',data:'Tier,SKU,Price\r\nDealer,MUG-01,11.00\r\n'},
+      {name:'README.txt',data:'SAMPLE DATA ONLY. Replace every sample before sharing. UTF-8 CSV. Products: SKU,Name,Price. Tiers: Tier,DiscountPercent (0-100, max two decimals). Overrides: Tier,SKU,Price; price wins over discount. Do not use outputs as store-import files. No tax or currency conversion is calculated.'}
+    ]),'application/zip');
+  });
+  $('runButton').addEventListener('click',()=>{
+    invalidate();$('acknowledge').checked=false;
+    try{
+      if(!table||!productsText)throw new C.InputError('FILE','Choose a products CSV or try the sample.');
+      if(!tiersText)throw new C.InputError('FILE','Choose a price tiers CSV.');
+      meta=U.metadata();
+      const productResult=C.normalizeProducts(table,{precision:Number($('precision').value),mapping:U.chosenMapping()});
+      const tiers=P.loadTiers(C.parseCSV(tiersText));
+      result=P.buildPriceLists(productResult,tiers,overridesText?C.parseCSV(overridesText):null,{currency:$('currency').value});
+      U.renderIssues(result.issues);
+      if(result.hasErrors){status('Fix the input errors before generating price lists.',true);return;}
+      const select=$('tierSelect');select.replaceChildren();
+      result.lists.forEach((l,i)=>{const option=document.createElement('option');option.value=String(i);option.textContent=l.name+' · '+(l.basisPoints/100)+'% discount';select.appendChild(option);});
+      U.renderPreview(result.lists[0],meta);$('empty').hidden=true;$('summary').hidden=false;
+      U.text('summary',result.productCount+' products · '+result.lists.length+' price tiers');
+      status('Ready to review. '+result.overrideCount+' specific price override(s). '+(sample?'These are sample outputs.':''));
+      updateExports();
+    }catch(e){result=null;setExports(false);status(errorMessage(e),true);}
+  });
+  $('tierSelect').addEventListener('change',()=>{if(result)U.renderPreview(result.lists[Number($('tierSelect').value)],meta);});
+  $('csvButton').addEventListener('click',()=>{
+    if(!result||!$('acknowledge').checked)return;const list=result.lists[Number($('tierSelect').value)];U.download(list.fileStem+'.csv',P.listCSV(list),'text/csv;charset=utf-8');
+  });
+  $('htmlButton').addEventListener('click',()=>{if(result&&$('acknowledge').checked)U.download('price-lists.html',U.htmlReport(result.lists,meta,result.issues),'text/html;charset=utf-8');});
+  $('zipButton').addEventListener('click',async()=>{
+    if(!result||!$('acknowledge').checked||busy)return;
+    const active=result,activeMeta=meta,atRevision=revision;setBusy(true);
+    try{
+      const includePDF=$('includePDF').checked;
+      const totalPages=active.lists.reduce((n,l)=>n+Math.ceil(l.lines.length/24),0);
+      if(includePDF&&totalPages>100)throw new Error('The batch exceeds 100 PDF pages. Choose CSV/HTML-only export or split your products file.');
+      const files=[];
+      for(let i=0;i<active.lists.length;i++){
+        const list=active.lists[i];files.push({name:list.fileStem+'.csv',data:P.listCSV(list)});
+        if(includePDF){status('Rendering '+list.name+' ('+(i+1)+'/'+active.lists.length+')…');files.push({name:list.fileStem+'.pdf',data:await U.renderPDF(list,activeMeta,(page,total)=>status('Rendering '+list.name+' · page '+page+'/'+total+'…'))});}
+      }
+      if(atRevision!==revision)throw new Error('Inputs changed during export. Build the lists again.');
+      files.push({name:'price-source-audit.csv',data:P.auditCSV(active)});
+      files.push({name:'price-lists.html',data:U.htmlReport(active.lists,activeMeta,active.issues)});
+      files.push({name:'manifest.json',data:JSON.stringify({version:'0.1.0',sampleData:sample,generatedAt:new Date().toISOString(),currency:active.currency,precision:active.precision,products:active.productCount,tiers:active.lists.map(l=>({name:l.name,fileStem:l.fileStem,discountPercent:l.basisPoints/100,rows:l.lines.length})),overrideCount:active.overrideCount,pdf:includePDF?'A4, 150 DPI image pages':'excluded by user',rounding:'half up',exchangeConversion:false},null,2)});
+      U.download('tiersheet-price-lists.zip',A.zip(files),'application/zip');
+      status('ZIP created: '+active.lists.length+' price tiers. '+(sample?'Sample data — not customer activity.':'Keep a copy before sharing.'));
+    }catch(e){status(errorMessage(e),true);}
+    finally{setBusy(false);}
+  });
+  const cfg=globalThis.TierSheetConfig||{};
+  try{
+    const url=new URL(cfg.checkoutUrl);
+    const allowed=['creem.io','www.creem.io','checkout.creem.io','l.creem.io'];
+    const valid=cfg.paymentMode==='live'&&url.protocol==='https:'&&!url.username&&!url.password&&!url.port&&allowed.includes(url.hostname)&&cfg.sellerName&&/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(cfg.supportEmail||'');
+    if(valid){$('buyLink').href=url.href;$('buyLink').hidden=false;U.text('purchaseStatus','$19 one-time. Seller: '+cfg.sellerName+' · Support: '+cfg.supportEmail+'. Payment and delivery are handled by Creem.');}
+  }catch(e){/* An unset or invalid checkout stays closed. */}
+  U.initializeDates();
+})();
+</script>
+</body></html>

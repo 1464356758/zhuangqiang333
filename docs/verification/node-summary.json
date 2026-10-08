@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-08",
+  "command": "npm test",
+  "node": "24.19.0",
+  "tests": 25,
+  "passed": 25,
+  "failed": 0,
+  "fixtureMode": "synthetic, not customers or income",
+  "recordType": "summary of actual command output"
+}

@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-08",
+  "command": "python3 scripts/verify-packages.py",
+  "status": "passed",
+  "files": 4,
+  "checks": [
+    "CRC",
+    "SHA-256 matches external release/checksums.json",
+    "free GPL and readable source present",
+    "batch implementation absent from free package",
+    "public checkout closed",
+    "private/tooling directories excluded",
+    "actual ledger empty"
+  ],
+  "receiptMode": "no business or payment evidence"
+}

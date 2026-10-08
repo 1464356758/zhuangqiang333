@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-08T16:33:38.165Z",
+  "fixtureMode": "synthetic; not customer activity",
+  "browser": "153.0.8010.0",
+  "checks": [
+    {
+      "name": "sample tiers, exact discounts and override preview",
+      "status": "passed"
+    },
+    {
+      "name": "actual CSV, HTML, templates and three-PDF ZIP downloads",
+      "status": "passed"
+    },
+    {
+      "name": "changed options invalidate every export",
+      "status": "passed"
+    },
+    {
+      "name": "uploaded comma/quote/Unicode data and spreadsheet-safe HTML/CSV",
+      "status": "passed"
+    },
+    {
+      "name": "duplicate SKU and unknown override block exports",
+      "status": "passed"
+    },
+    {
+      "name": "invalid UTF-8 and malformed CSV do not retain old data",
+      "status": "passed"
+    },
+    {
+      "name": "PDF overflow gives a clear error; CSV fallback works",
+      "status": "passed"
+    },
+    {
+      "name": "mobile layout and local file use",
+      "status": "passed"
+    },
+    {
+      "name": "complete free edition exports over one hundred products",
+      "status": "passed"
+    },
+    {
+      "name": "sales closed; no external requests or JavaScript errors",
+      "status": "passed"
+    },
+    {
+      "name": "publication draft links to working free app and keeps checkout closed",
+      "status": "passed"
+    }
+  ],
+  "externalRequests": [],
+  "pageErrors": []
+}

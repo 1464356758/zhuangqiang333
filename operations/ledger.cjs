@@ -2,8 +2,8 @@
 'use strict';
 const fs=require('node:fs');
 function summarise(events){
-  const seen=new Set(),orders=new Map(),currency={},visitors=new Set(),users=new Set(),intents=new Set();
-  let visitObserved=false,useObserved=false,intentObserved=false,excludedTestEvents=0;
+  const seen=new Set(),orders=new Map(),currency={},visitors=new Set(),users=new Set(),intents=new Set(),payingSubjects=new Set();
+  let visitObserved=false,useObserved=false,intentObserved=false,excludedTestEvents=0,buyerCoverageComplete=true;
   function amount(v){if(!Number.isSafeInteger(v)||v<0)throw new Error('Amounts must be non-negative integer minor units.');return v;}
   function wallet(code){
     if(!/^[A-Z]{3}$/.test(code||''))throw new Error('Use a three-letter currency.');
@@ -28,6 +28,7 @@ function summarise(events){
       if(gross===0)throw new Error('Zero-value approvals or test orders are not a paid user.');
       if(tax+fee>gross)throw new Error('Tax and fees exceed gross payment.');
       orders.set(e.order_id,{currency:e.currency,gross,tax,refunded:0});
+      if(e.subject_id)payingSubjects.add(e.subject_id);else buyerCoverageComplete=false;
       w.paidGrossMinor+=gross;w.salesTaxMinor+=tax;w.transactionFeesMinor+=fee;
     }else if(e.type==='refund'){
       const order=orders.get(e.order_id),gross=amount(e.gross_minor),tax=amount(e.tax_minor),extra=amount(e.extra_fee_minor);
@@ -47,10 +48,11 @@ function summarise(events){
     actualUsers:useObserved?users.size:null,
     statedIntentCount:intentObserved?intents.size:null,
     successfulPaymentCount:orders.size,
+    uniquePayingUsers:buyerCoverageComplete?payingSubjects.size:null,
     refundedOrders:[...orders.values()].filter(o=>o.refunded>0).length,
     excludedTestEvents,
     currency,
-    conversionRate:visitObserved&&visitors.size?orders.size/visitors.size:null,
+    conversionRate:visitObserved&&visitors.size&&buyerCoverageComplete&&[...payingSubjects].every(id=>visitors.has(id))?payingSubjects.size/visitors.size:null,
     noExchangeConversion:true
   };
 }

@@ -1,0 +1,17 @@
+{
+  "fixtureMode": "disposable local WordPress; sample data only",
+  "requestedWordPress": "7.1.3",
+  "confirmedWordPress": "7.1.3",
+  "php": "8.3 WASM / SQLite (confirmed via Site Health)",
+  "checks": [
+    "plugin automatically activated",
+    "admin tool and sandboxed iframe loaded",
+    "sample generates three real rows",
+    "PDF download works inside sandbox",
+    "WordPress version confirmed in About page",
+    "PHP version confirmed via Site Health",
+    "logged-out admin route redirects to login"
+  ],
+  "status": "passed",
+  "productionMySQL": false
+}

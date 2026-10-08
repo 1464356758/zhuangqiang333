@@ -31,3 +31,17 @@ test('missing evidence and excessive refunds are rejected',()=>{
   assert.throws(()=>summarise([{mode:'live',type:'payment'}]),/evidence/);
   assert.throws(()=>summarise([fixture('r','refund',{order_id:'none',currency:'USD',gross_minor:100,tax_minor:0,extra_fee_minor:0})]));
 });
+test('two orders from one attributed buyer are one converted visitor',()=>{
+  const r=summarise([
+    fixture('v','visit',{subject_id:'synthetic-visitor'}),
+    fixture('p1','payment',{order_id:'O1',subject_id:'synthetic-visitor',currency:'USD',gross_minor:1900,tax_minor:0,fee_minor:114}),
+    fixture('p2','payment',{order_id:'O2',subject_id:'synthetic-visitor',currency:'USD',gross_minor:1900,tax_minor:0,fee_minor:114})
+  ]);
+  assert.equal(r.successfulPaymentCount,2);assert.equal(r.uniquePayingUsers,1);assert.equal(r.conversionRate,1);
+});
+test('missing or unmatched buyer attribution leaves conversion unknown',()=>{
+  const v=fixture('v','visit',{subject_id:'synthetic-visitor'});
+  const p=fixture('p','payment',{order_id:'O',currency:'USD',gross_minor:1900,tax_minor:0,fee_minor:114});
+  assert.equal(summarise([v,p]).conversionRate,null);
+  assert.equal(summarise([v,{...p,subject_id:'unmatched-synthetic-buyer'}]).conversionRate,null);
+});
