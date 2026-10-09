@@ -4,7 +4,7 @@
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-用户已确认中国大陆、只有手机，有条件考虑电脑但未授权采购。当前按长期无人看管挂机筛选；复杂定制悬赏ClawHunt未通过人工投入/可靠性关口，试单与注册建议撤回。其[试单草稿](operations/AGENT_TASK_PILOT.md)仅保留为历史记录，不执行。尚无新项目通过完整门槛，原始来源与最新反证见[自用收入核验](research/SELF_USE_INCOME_REVIEW.md)，恢复见[PROJECT_STATUS.md](PROJECT_STATUS.md)。TierSheet与商家费用方向仍停止；没有新软件、真实收入或模拟收益后台。
+用户已确认中国大陆、只有手机，电脑投资是未授权的条件意愿。最新[Telegram公开线索复查](research/TELEGRAM_INCOME_REVIEW.md)找到MQL5 Cloud自动计算和AiToEarn人民币标价任务；前者设备/提款/净利润、后者账号运营/验收等关口未通过，尚无合格挂机项目。ClawHunt试单与注册建议继续撤回，其[历史草稿](operations/AGENT_TASK_PILOT.md)不执行。TierSheet与商家费用方向仍停止；没有新软件或收入。恢复见[PROJECT_STATUS.md](PROJECT_STATUS.md)。
 
 ### 历史原型：TierSheet
 
@@ -40,6 +40,7 @@ npm start
 
 ### 完整记录
 
+- [research/TELEGRAM_INCOME_REVIEW.md](research/TELEGRAM_INCOME_REVIEW.md)：最新公开频道线索、官方规则和未通过的现金/设备关口。
 - [research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)：当前自用收入与手机/购机核验；任务、辅助与现金条件仍未验证。
 - [research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)：历史信息差、费用漏损证据、竞争及准入/收款反证。
 - [research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)：上一轮持续业务问题与竞争反证。
