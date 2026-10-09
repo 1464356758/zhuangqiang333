@@ -1,0 +1,233 @@
+"""Tesseract OCR input module for invoice2data."""
+
+import mimetypes
+import shutil
+import tempfile
+from logging import getLogger
+from pathlib import Path
+from subprocess import PIPE
+from subprocess import STDOUT
+from subprocess import CalledProcessError
+from subprocess import Popen
+from subprocess import TimeoutExpired
+from subprocess import run
+from typing import Any
+
+from ..exceptions import TemplateSyntaxError
+
+
+logger = getLogger(__name__)
+
+SUPPORTS_AREA = True
+
+
+def _imagemagick_cmd() -> list[str] | None:
+    """Return the ImageMagick invocation prefix, or ``None`` when absent.
+
+    Prefers ``magick`` (ImageMagick 7+, cross-platform, and the only working
+    variant on Windows where ``convert`` clashes with the built-in
+    ``convert.exe``). Falls back to the legacy ``convert`` binary
+    (ImageMagick 6) elsewhere.
+
+    Returns:
+        list[str] | None: A prefix list ready to concatenate with the
+            operation arguments, or ``None`` if ImageMagick isn't installed.
+    """
+    if shutil.which("magick"):
+        return ["magick"]
+    if shutil.which("convert"):
+        return ["convert"]
+    return None
+
+
+def is_available() -> bool:
+    """Return whether the ``tesseract`` and ImageMagick binaries are present.
+
+    Returns:
+        bool: True if both ``tesseract`` and an ImageMagick invocation
+            (``magick`` or the legacy ``convert``) are on the PATH.
+    """
+    return shutil.which("tesseract") is not None and _imagemagick_cmd() is not None
+
+
+def _validate_area_details(area_details: dict[str, Any]) -> None:
+    """Raise ``TemplateSyntaxError`` if a required area key is missing.
+
+    Args:
+        area_details (dict[str, Any]): The template's ``area`` block.
+
+    Raises:
+        TemplateSyntaxError: If any of ``f, l, r, x, y, W, H`` is absent.
+    """
+    for key in ("f", "l", "r", "x", "y", "W", "H"):
+        if key not in area_details:
+            raise TemplateSyntaxError(
+                f"template `area` block missing required key `{key}` "
+                "(need f, l, r, x, y, W, H)"
+            )
+
+
+def to_text(path: str, area_details: dict[str, Any] | None = None) -> str:
+    """Extract text from image using tesseract OCR.
+
+    Args:
+        path (str): Path to the image file.
+        area_details (dict[str, Any] | None, optional):
+            Specific area in the image to extract text from.
+            Defaults to None (extract from the entire image).
+
+    Returns:
+        str: The extracted text.
+
+    Raises:
+        FileNotFoundError: If the specified image file is not found.
+        OSError: If Tesseract OCR fails to extract text.
+    """
+    if not Path(path).exists():
+        raise FileNotFoundError(f"File not found: {path}")
+    # Check for dependencies. Needs Tesseract and Imagemagick installed.
+    if not shutil.which("tesseract"):
+        raise OSError("tesseract not installed.")
+    im_cmd = _imagemagick_cmd()
+    if im_cmd is None:
+        raise OSError("imagemagick not installed.")
+
+    language = get_languages()
+    logger.debug("tesseract language arg is, %s", language)
+    timeout = 180
+
+    # convert the (multi-page) pdf file to a 300dpi png. ImageMagick 7+ takes
+    # the operation arguments directly after ``magick``; the legacy
+    # ``convert`` binary (IM 6) takes the same argument list, so the prefix
+    # returned by ``_imagemagick_cmd`` slots in cleanly here.
+    convert = [
+        *im_cmd,
+        "-units",
+        "PixelsPerInch",
+        "-density",
+        "350",
+        path,
+        "-depth",
+        "8",
+        "-alpha",
+        "off",
+        "-resample",
+        "300x300",
+        "-append",
+        "png:-",
+    ]
+    mt = mimetypes.guess_type(path)
+    if mt[0] == "application/pdf":
+        # tesseract does not support pdf files, pre-processing is needed.
+        logger.debug("PDF file detected, start pre-processing by converting to png")
+        p1 = Popen(convert, stdout=PIPE)
+        tess_input = "stdin"
+        stdin = p1.stdout
+    else:
+        tess_input = path
+        stdin = None
+
+    inputfile = Path(path)
+    filename = inputfile.stem
+
+    tmp_folder = str(tempfile.gettempdir()) + "/"
+    logger.debug("temp dir is, *%s*", tmp_folder)
+
+    tess_cmd = [
+        "tesseract",
+        "-l",
+        language,
+        "--oem",
+        "3",
+        "--psm",
+        "6",
+        "-c",
+        "preserve_interword_spaces=1",
+        "-c",
+        "textonly_pdf=1",
+        tess_input,
+        tmp_folder + filename,
+        "pdf",
+        "txt",
+    ]
+
+    logger.debug("Calling tesseract with args, %s", tess_cmd)
+    p2 = Popen(tess_cmd, stdin=stdin, stdout=PIPE)
+
+    # Wait for p2 to finish generating the pdf
+    try:
+        p2.wait(timeout=timeout)
+    except TimeoutExpired:
+        p2.kill()
+        logger.warning("tesseract took too long to OCR - skipping")
+
+    pdftotext_cmd = [
+        "pdftotext",
+        "-layout",
+        "-enc",
+        "UTF-8",
+    ]
+    if area_details is not None:
+        _validate_area_details(area_details)
+        # Convert all of the values to strings
+        for key in area_details:
+            area_details[key] = str(area_details[key])
+        pdftotext_cmd += [
+            "-f",
+            area_details["f"],
+            "-l",
+            area_details["l"],
+            "-r",
+            area_details["r"],
+            "-x",
+            area_details["x"],
+            "-y",
+            area_details["y"],
+            "-W",
+            area_details["W"],
+            "-H",
+            area_details["H"],
+        ]
+    pdftotext_cmd += [tmp_folder + filename + ".pdf", "-"]
+
+    logger.debug("Calling pdfttext with, %s", pdftotext_cmd)
+    extracted_str = b""
+    p3 = Popen(pdftotext_cmd, stdin=p2.stdout, stdout=PIPE)
+    try:
+        out, _ = p3.communicate(timeout=timeout)
+        extracted_str = out
+    except TimeoutExpired:
+        p3.kill()
+        logger.warning("pdftotext took too long - skipping")
+    return extracted_str.decode("utf-8")
+
+
+def get_languages() -> str:
+    def lang_error(output: str) -> str:
+        logger.warning(  # Use logger.warning instead of assigning to it
+            "Tesseract failed to report available languages.\n"
+            "Output from Tesseract:\n"
+            "-----------\n"
+        )
+        return output  # Add return statement
+
+    logger.debug("get lang called")
+    args_tess = ["tesseract", "--list-langs"]
+    try:
+        proc = run(
+            args_tess,
+            text=True,
+            stdout=PIPE,
+            stderr=STDOUT,
+            check=True,
+        )
+        output = proc.stdout
+    except CalledProcessError as e:
+        raise OSError(lang_error(e.output)) from e
+
+    for line in output.splitlines():
+        if line.startswith("Error"):
+            raise OSError(lang_error(output))
+    _header, *rest = output.splitlines()
+    langlist: set[str] = {lang.strip() for lang in rest}
+    return "+".join(map(str, langlist))

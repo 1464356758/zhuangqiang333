@@ -1,0 +1,60 @@
+{
+  "checked_date": "2026-10-09",
+  "scope": "README and root licenses inspected; only invoice2data subset executed. Not an exhaustive dependency/license/security audit.",
+  "repositories": [
+    {
+      "repository": "docling-project/docling",
+      "sha": "b2a59b9fa1a31ae6584d4dd18cd0c2bb3ca285b6",
+      "tree": "efcc9021eae48c4b0d32438288f92cfaea337e59",
+      "branch": "main"
+    },
+    {
+      "repository": "apify/crawlee",
+      "sha": "d893412583237086f20f071e4aac97714bca3151",
+      "tree": "b9ca1845876134ce96d6584f6b3316f63465369a",
+      "branch": "master"
+    },
+    {
+      "repository": "gotenberg/gotenberg",
+      "sha": "c83dbd7bafacb3734ebadf2e33a4049a17d45ec9",
+      "tree": "7254dba96233799ecedd6c8ed9a4e072cf1ef98a",
+      "branch": "main"
+    },
+    {
+      "repository": "Tiledesk/tiledesk",
+      "sha": "7509f1f7f14429e44dcebd7c0293375975e41c14",
+      "tree": "d230b891600a827246fe7d2d64ccc57c29d1df4d",
+      "branch": "master"
+    },
+    {
+      "repository": "invoice-x/invoice2data",
+      "sha": "09378126e3ae86ddef5435ba166b4fc026e386a4",
+      "tree": "65c7209ea5a5a0d58bc4f6b00a2e46b174328bf4",
+      "branch": "master"
+    },
+    {
+      "repository": "n8n-io/n8n",
+      "sha": "13679fcb97fe26c775d711dd05e1db2f941e536a",
+      "tree": "1055190059266a44f3a240df507463a299d0d856",
+      "branch": "master"
+    },
+    {
+      "repository": "langgenius/dify",
+      "sha": "c497e930a6bd10a114422fe68dd758d8d4087f6c",
+      "tree": "c5f2d2ff987f047baccb82ec05c2a746fcc157d7",
+      "branch": "main"
+    },
+    {
+      "repository": "formbricks/formbricks",
+      "sha": "c871aecdf37c254ab9d794ebb76e3f0ae3af459e",
+      "tree": "e076b3ec40dde46ba7e02aad28c632d20c54197e",
+      "branch": "main"
+    },
+    {
+      "repository": "twentyhq/twenty",
+      "sha": "520ee32a7717f34fed199321a8407c6dc8a732a9",
+      "tree": "24ad26023d230fc085befd164f0831067359031a",
+      "branch": "main"
+    }
+  ]
+}

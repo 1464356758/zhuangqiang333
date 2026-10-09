@@ -1,6 +1,8 @@
 # 运行、发布、付款和恢复
 
-**2026-10-09当前决定：本方向已停止，以下注册/部署/付费教程为历史草稿，不再要求用户执行。新的恢复位置为PROJECT_STATUS和research/DIRECTION_REVIEW。**
+**2026-10-09当前决定：最新invoice2data源码实验的运行和故障恢复见[实验README](experiments/github-code-audit/README.md)，可在项目根目录执行 `python experiments/github-code-audit/test_upstream.py`。4项本地测试已通过；没有服务器部署、手机访问地址或真实付费入口。目前无需用户买电脑、注册账号或支付费用。**
+
+**以下TierSheet注册/部署/付费教程为已停止方向的历史草稿，不再要求用户执行。恢复从PROJECT_STATUS.md、TODO.md及operations/checkpoint.json开始。**
 
 上一轮历史更新（已撤回）：当前只推进[具体零现金市场验证](operations/SALES_GATE.md)，新增功能暂停。本人账号、市场发布与收费仍待授权；原软件不变，下面是已准备的操作草稿。
 

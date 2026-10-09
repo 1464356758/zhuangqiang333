@@ -1,0 +1,383 @@
+{
+  "checked_date": "2026-10-09",
+  "repository": "invoice-x/invoice2data",
+  "commit": "09378126e3ae86ddef5435ba166b4fc026e386a4",
+  "license_file": "invoice2data/LICENSE.md",
+  "original_files_modified": false,
+  "download_scope": "62 selected source/documentation files; not a complete clone. Bundled vendor YAML templates, binary PDF fixtures and other repository content excluded.",
+  "files": [
+    {
+      "path": "LICENSE.md",
+      "upstream_blob_sha": "44c5cfabb76d48fa0be8f72e28888abb54a75324",
+      "bytes": 1078,
+      "sha256": "507ec557dc18cba19b9e31ef440f129f8d46c9d7f46dcc039b918344874870d6"
+    },
+    {
+      "path": "README.md",
+      "upstream_blob_sha": "b281680837c84ef7b6c517abe2e32b153ab0a8f3",
+      "bytes": 8962,
+      "sha256": "6390a904ff680af13d57a24ae4fc0b14de81fda3d571a193f6b60010e3e6a583"
+    },
+    {
+      "path": "pyproject.toml",
+      "upstream_blob_sha": "14798eea0893e3736d470e81199586a3e976ea7a",
+      "bytes": 9593,
+      "sha256": "84f8fcbaf0bbbcea4655bd55a03d2af5746cb27a7532e8f2135f842cadce7400"
+    },
+    {
+      "path": "setup.py",
+      "upstream_blob_sha": "3f17f0dee01475bc45d3261c2ef2f3217c7edc2d",
+      "bytes": 1852,
+      "sha256": "387d11a75b9925ff24ce5c16de1dea7ef33b8c581d9565d8a7ec2eb4cbe53696"
+    },
+    {
+      "path": "src/invoice2data/__init__.py",
+      "upstream_blob_sha": "5bf5770d071e7e05ef36ce3fd5d3210527399ded",
+      "bytes": 443,
+      "sha256": "ab0dadbb80dfe75c899fccb1cbf9a683852aaa5fd0f460221e594459afab4735"
+    },
+    {
+      "path": "src/invoice2data/__main__.py",
+      "upstream_blob_sha": "333fa06985a8c55a5ee71af124e98b56deb62da8",
+      "bytes": 19891,
+      "sha256": "e557d4be3e492c075683af3fcfaa49b55b1c9bfb9520e24c93855b74b258423e"
+    },
+    {
+      "path": "src/invoice2data/ai/__init__.py",
+      "upstream_blob_sha": "8139656340ea5b1ee431a708ce570659b4f2bf2f",
+      "bytes": 615,
+      "sha256": "da376c195f6b5cff6755c7d3406137efeda56ac680c5c2d085f0301a4006c0c6"
+    },
+    {
+      "path": "src/invoice2data/ai/__interface__.py",
+      "upstream_blob_sha": "e8ab8d12ed0def4ca6550bde65790f541327eea3",
+      "bytes": 2238,
+      "sha256": "3893f2847f616a1e7828fa6965ffbb1dd05ed26c719d7e162ad1e0611a2f1e7c"
+    },
+    {
+      "path": "src/invoice2data/ai/config.py",
+      "upstream_blob_sha": "953bc28d3d9e0765416ce03bd9860136048513f6",
+      "bytes": 2077,
+      "sha256": "e448cf27fd1e064ddeb0c53da0bde20d9a1f27d39561df5d05bfce249725f98a"
+    },
+    {
+      "path": "src/invoice2data/ai/fallback.py",
+      "upstream_blob_sha": "50bedda3d0fb3e9b305ff4dfef148b4ed1fc96c2",
+      "bytes": 3183,
+      "sha256": "cc58366bbf2eb5b0926a673e1bed62200dcd70225ebc05d9a0a6abbfee623085"
+    },
+    {
+      "path": "src/invoice2data/ai/providers/__init__.py",
+      "upstream_blob_sha": "a16ce9a9cd3cbcb771ce95b430d218d771cac2b3",
+      "bytes": 56,
+      "sha256": "4a495cb733575403ac1a7dbd45c0c8e2f0a018ebf1fc36be8e8c51227d251745"
+    },
+    {
+      "path": "src/invoice2data/ai/providers/mock.py",
+      "upstream_blob_sha": "d34886e10d726427779d5f5acb6c08ba1494e3d9",
+      "bytes": 1306,
+      "sha256": "f2bd4bc4184a1fb43e0ee07688409d4d974b10349d7964078f948bd5ffb943ec"
+    },
+    {
+      "path": "src/invoice2data/ai/providers/openai_compatible.py",
+      "upstream_blob_sha": "e24ac7e84ad0d352c07935a579ffb01f1069f0d0",
+      "bytes": 3397,
+      "sha256": "d47a13ce57bde06e198032225f3a46d212acd91b8955fc49ba2ec88fbafe9704"
+    },
+    {
+      "path": "src/invoice2data/ai/schema_json.py",
+      "upstream_blob_sha": "e04d03e0c9937b6cd939c430fcaa59be88d6687b",
+      "bytes": 1718,
+      "sha256": "3ecbd06b580878dcf2cd260cbc849b6a3c0506644dfd763dee7ab72d1103b993"
+    },
+    {
+      "path": "src/invoice2data/ai/template_generator.py",
+      "upstream_blob_sha": "16f5fcdcc54fac50b1deccaa8be926fe265fcbc5",
+      "bytes": 5327,
+      "sha256": "e7d9e05e9e6d7def47ae1a697600b0a5aab68fa90324ffbe430abf20895397ce"
+    },
+    {
+      "path": "src/invoice2data/api.py",
+      "upstream_blob_sha": "69eb6c1e900487eebed839b0b35f3c9ddf631a78",
+      "bytes": 20526,
+      "sha256": "f84f34ad660a30a7a0154e9e8a17a1cd8944bb1d8b7f9db458c1113587fb899e"
+    },
+    {
+      "path": "src/invoice2data/exceptions.py",
+      "upstream_blob_sha": "248738af44d1ee8d81aefa04d734d9b3f3317bf8",
+      "bytes": 2811,
+      "sha256": "5e6fa7e673d5552d21f1016d037e053ba636aa4223b0984fb28e56e803f9aeda"
+    },
+    {
+      "path": "src/invoice2data/extract/__init__.py",
+      "upstream_blob_sha": "dbc20bc6fafd6dd5af5616d8de8be3971a03f582",
+      "bytes": 30,
+      "sha256": "3b0709e573f62a72e579400083c1381b24ea0cf41e4f667f72cf7718e63743e5"
+    },
+    {
+      "path": "src/invoice2data/extract/_dates.py",
+      "upstream_blob_sha": "85886edee48a60f6bbdff9da64ca7da43a09d9fa",
+      "bytes": 3851,
+      "sha256": "8b35d4a3284484e11f4a8b6927d1822851e5b2e86e9eb9e5fcee8c872f0a7c79"
+    },
+    {
+      "path": "src/invoice2data/extract/_regex.py",
+      "upstream_blob_sha": "b3fdcecea45c93fdd2cf90e4c23c3ff129423490",
+      "bytes": 4012,
+      "sha256": "a2e63f36e96f1bb65247ea57b582b16e91277d7c082d034e28850e57b3db0495"
+    },
+    {
+      "path": "src/invoice2data/extract/candidates.py",
+      "upstream_blob_sha": "4e1444a1724cad16fef3e36edce33d6c98d1c8f8",
+      "bytes": 7326,
+      "sha256": "93b188e969b960f48b5ddcd8b972168b2080ddcbc9753ef77e8165fb95dad7dd"
+    },
+    {
+      "path": "src/invoice2data/extract/excalibur.py",
+      "upstream_blob_sha": "ee4ed275d5cace7ac8c717b4709e26974979f518",
+      "bytes": 4791,
+      "sha256": "24c24b4153916025796d77653dc39f742656791206c913536da44b2548c8acc3"
+    },
+    {
+      "path": "src/invoice2data/extract/invoice_template.py",
+      "upstream_blob_sha": "e5e9298c4d60618ef8077c6f21f2072a5249dce4",
+      "bytes": 25496,
+      "sha256": "2bda83836013a1c64e509de522706d53b9d73a02e8bd15ffafd3697eb1d8e01b"
+    },
+    {
+      "path": "src/invoice2data/extract/labels.py",
+      "upstream_blob_sha": "db49ca1ebed775bf043f98fee1fb97e548618a38",
+      "bytes": 8199,
+      "sha256": "0648403f2da4ff494f157c9cf25d31d567a020d47f9b61e0a2eb52bef351fee9"
+    },
+    {
+      "path": "src/invoice2data/extract/loader.py",
+      "upstream_blob_sha": "2528c7b300553abc940f604cf8c95fe59890eac4",
+      "bytes": 11432,
+      "sha256": "0e9e89f778aa2fef2e4f5a4a2c6a46a950a2bf89fb78abbcb51121f69f47ffa1"
+    },
+    {
+      "path": "src/invoice2data/extract/parsers/__init__.py",
+      "upstream_blob_sha": "75e18e7036a34ed47801b6e5031a91efbd79edb6",
+      "bytes": 134,
+      "sha256": "6cc4c0f075439aeee2739a009ca69975c9a3154102320ffc23577f25149d11a2"
+    },
+    {
+      "path": "src/invoice2data/extract/parsers/__interface__.py",
+      "upstream_blob_sha": "55d17cdb5d697bfd43e8c4042422e9dd4f203ec9",
+      "bytes": 657,
+      "sha256": "9887960a050953d682f0621a39a22c3f3ab179953431e5ea50893a61b84343aa"
+    },
+    {
+      "path": "src/invoice2data/extract/parsers/lines.py",
+      "upstream_blob_sha": "4e42a97907aeea41839dee8533a7bf7f5ce8f4b4",
+      "bytes": 16880,
+      "sha256": "7e329eddc735f7ba9c342164453470849730ba42b9eaa87bc301d5c1844fe5d0"
+    },
+    {
+      "path": "src/invoice2data/extract/parsers/records.py",
+      "upstream_blob_sha": "7637d926a24e9a8994b1abfe08f899ff0baeda81",
+      "bytes": 1458,
+      "sha256": "2bc9cf3dd4f6f6be56111c0531a147b39438c5cc77be13dfa382e75580ecaa1c"
+    },
+    {
+      "path": "src/invoice2data/extract/parsers/regex.py",
+      "upstream_blob_sha": "ef9e7fd71922a0edf38edae36fffea13eaf586f9",
+      "bytes": 6779,
+      "sha256": "dd6e1cdea69651239f86e4c6eb22becd542187d50999102e4940e2b2b6826308"
+    },
+    {
+      "path": "src/invoice2data/extract/parsers/static.py",
+      "upstream_blob_sha": "731ad735567c776f8008e1df67516b0088179eca",
+      "bytes": 549,
+      "sha256": "cafe09e491af3d7db723be5007d79419a165be1988369586d8169413bdfabb60"
+    },
+    {
+      "path": "src/invoice2data/extract/plugins/__init__.py",
+      "upstream_blob_sha": "60ebf61a8ec2b0d4aeef8e100b9ca950deebb8b6",
+      "bytes": 30,
+      "sha256": "7166e15a150c11a9fac5548f573f229fdf59ceb61eeb4c16814500f91a15b676"
+    },
+    {
+      "path": "src/invoice2data/extract/plugins/__interface__.py",
+      "upstream_blob_sha": "39e354100c640cd27bb5b5d47a1365aa9cb2b493",
+      "bytes": 847,
+      "sha256": "373b035c4b7ca2714e4183a0132fdfcd30731683f699a3ab17e7fa86076ff539"
+    },
+    {
+      "path": "src/invoice2data/extract/plugins/camelot.py",
+      "upstream_blob_sha": "397807012d0b394ee1091739825b6d6522521448",
+      "bytes": 5110,
+      "sha256": "58138dd71890838138a7962a8dd5ab4abbd63bcf8d31c195e7c0f464e61c5915"
+    },
+    {
+      "path": "src/invoice2data/extract/plugins/lines.py",
+      "upstream_blob_sha": "e0cf4c5d3ee556eac24c88c77ab4f4f596675827",
+      "bytes": 1522,
+      "sha256": "8a27272ead7783f786b195ec17c66587d1c8cd6376900eed5c7764006e1973aa"
+    },
+    {
+      "path": "src/invoice2data/extract/plugins/tables.py",
+      "upstream_blob_sha": "392cc92ce61effa598f72e46eb37d496baf9ab24",
+      "bytes": 7808,
+      "sha256": "13fff60815b92b6cd7c2bc35fa99ebbeb8dd57fa48b3997cba69dc27e5538ece"
+    },
+    {
+      "path": "src/invoice2data/extract/schema.py",
+      "upstream_blob_sha": "9713b34ed9cfc26515fb7c1d97f699e81e0aa362",
+      "bytes": 6256,
+      "sha256": "83e824518f3f69bd6449764f83e767f79208c675915dd99bf722b9ab33cdf7bd"
+    },
+    {
+      "path": "src/invoice2data/extract/suggestions.py",
+      "upstream_blob_sha": "85b42cf7d47a5128e86dbfcfccf38fe9ec294b5b",
+      "bytes": 2567,
+      "sha256": "98520ebc8ac21f7e355d2557e4b4b6f75f520965cc301ab93ff952e54fbde1dd"
+    },
+    {
+      "path": "src/invoice2data/extract/template_builder.py",
+      "upstream_blob_sha": "eee83aec62018fb46e3a268402dcaf6aa0973bfd",
+      "bytes": 7793,
+      "sha256": "43175be1f5ac0193811fe52e2020d714ae3315ded737b36dec17cf08dc062729"
+    },
+    {
+      "path": "src/invoice2data/extract/unece_uom.py",
+      "upstream_blob_sha": "5a3d62bb6584e7889d2868ea3f58b0c6dca8ea7c",
+      "bytes": 5127,
+      "sha256": "1b4c17e89192591862b8aa98e20a04aef1ab90f3688d23ddc810461175ec58c1"
+    },
+    {
+      "path": "src/invoice2data/extract/utils.py",
+      "upstream_blob_sha": "327fb55bda212144327a4d8022afbd51f51121ac",
+      "bytes": 1093,
+      "sha256": "ad8f226a6ce57a5f1a8bca891effe960dfe36900a5ecadadc5cb2ec793dc468a"
+    },
+    {
+      "path": "src/invoice2data/extract/validators.py",
+      "upstream_blob_sha": "a37d25115cb73a6b0477bf02fd3394f214b1e140",
+      "bytes": 4334,
+      "sha256": "d3990c00b3d27d3e5ba6e7af317fed42fdeae2cb6748b73371f14105adc5910f"
+    },
+    {
+      "path": "src/invoice2data/input/__init__.py",
+      "upstream_blob_sha": "53f340b8eb0807276f0e94a51b3f80bd41d25770",
+      "bytes": 6224,
+      "sha256": "55adf0f4c74e4b129f9f3236fa7ae483bfb0cd982599bd369a088de80b70181b"
+    },
+    {
+      "path": "src/invoice2data/input/__interface__.py",
+      "upstream_blob_sha": "f249617b62d2211368df7296aa483de836f05afa",
+      "bytes": 1096,
+      "sha256": "fb5c2a521cce7d57349df7569aad17ba43919ec1be4cab5356020b6137112844"
+    },
+    {
+      "path": "src/invoice2data/input/doctr.py",
+      "upstream_blob_sha": "32debb33c540127e0d184b61674d7d6d7ef430a4",
+      "bytes": 2939,
+      "sha256": "9ca0d189bbd3a353f01e7be8c853dc88186ad71ea365106a9daab893c223e89c"
+    },
+    {
+      "path": "src/invoice2data/input/gvision.py",
+      "upstream_blob_sha": "a1686b19649d3be7210fd215aec13bc99477d540",
+      "bytes": 4778,
+      "sha256": "ad46857e892897e94dcbe9db88cecc7b4d3f990c737f5ab14f891da9f9c695a8"
+    },
+    {
+      "path": "src/invoice2data/input/hotpdf.py",
+      "upstream_blob_sha": "8e118766c9408278b23b8041a11f41bcb02f8eb4",
+      "bytes": 1113,
+      "sha256": "2d2795a7acf7e1cc3b5185cd5387a1041be2f90fd043e75ae926520115eb7e3e"
+    },
+    {
+      "path": "src/invoice2data/input/ocrmypdf.py",
+      "upstream_blob_sha": "e8b9cd048653d0a7acecf7635db6cc9a705dcb87",
+      "bytes": 5368,
+      "sha256": "c253ab44dca22deca42b234140ce5648cf3159b0a89aceaa822e59d0228030f4"
+    },
+    {
+      "path": "src/invoice2data/input/paddleocr.py",
+      "upstream_blob_sha": "fe1cf363f163cee8f64818583ac2fbf9b46abd2b",
+      "bytes": 3742,
+      "sha256": "8a79b0aa665b88ff91cccf6ebddff47dc51083a117b9f9f2b97fd654a16990c0"
+    },
+    {
+      "path": "src/invoice2data/input/pdfium.py",
+      "upstream_blob_sha": "76465dbd7ca1936bdb361fbf030ca098254f92d1",
+      "bytes": 4676,
+      "sha256": "c6fe494bf6ebeb905c177617592d67a5655d121467a33e62548a0768a43bcfbc"
+    },
+    {
+      "path": "src/invoice2data/input/pdfminer_wrapper.py",
+      "upstream_blob_sha": "c951330b63b333fe69a71605e62d385b1e9e8a6a",
+      "bytes": 1671,
+      "sha256": "73bcfff9edd95581d00b3c701c5642d3b7f4bd8584141ac707eca0be7f700a7f"
+    },
+    {
+      "path": "src/invoice2data/input/pdfoxide.py",
+      "upstream_blob_sha": "f94c81a5f1132f995f7a889ce8cec558360b0768",
+      "bytes": 1183,
+      "sha256": "05bc3541e205263c78d24ed185e6e34be87a2e3bd615feb637acb02a4fe8e0b6"
+    },
+    {
+      "path": "src/invoice2data/input/pdfplumber.py",
+      "upstream_blob_sha": "e26780f7a0e2394142b105080cd75e8b33780084",
+      "bytes": 1620,
+      "sha256": "c9a9450700b0736957466430e8deb00a94f6d187c7d770d51e4347e0af47932d"
+    },
+    {
+      "path": "src/invoice2data/input/pdftotext.py",
+      "upstream_blob_sha": "68fdce2e500a0c0da1f53cb3a366e8b6768815f2",
+      "bytes": 6216,
+      "sha256": "2a7e7f96511141a0501d5bfa122b07875d9f2699500573266f886a8258a63366"
+    },
+    {
+      "path": "src/invoice2data/input/tesseract.py",
+      "upstream_blob_sha": "21ae863b6d876b95ae201a67e7b60071a5b272cb",
+      "bytes": 6893,
+      "sha256": "1cadf155274a72be15f21ab8863b26d55e9f7f219182db34404ecd6dda0d7443"
+    },
+    {
+      "path": "src/invoice2data/input/text.py",
+      "upstream_blob_sha": "a6d04b781ee92e77fc187649f8bf1a4ba6c4b2c9",
+      "bytes": 350,
+      "sha256": "c714c2b27a505ec4de6a669100621b143c147c166fbbbe049d2ab79b1dfed303"
+    },
+    {
+      "path": "src/invoice2data/output/__init__.py",
+      "upstream_blob_sha": "a8004885b7fef2b2e9ea09ef378f00d11bae7a46",
+      "bytes": 1467,
+      "sha256": "b041f253b13306935cb2650d50781755634eb7b154d017f9ebd09a212aa168c3"
+    },
+    {
+      "path": "src/invoice2data/output/to_csv.py",
+      "upstream_blob_sha": "612fef83fbeb37aaf571e980a7697f5018db8d8d",
+      "bytes": 4626,
+      "sha256": "f69ad2508684435d6f13f1f9295c3536303e59e2541972de1535223ef45c9473"
+    },
+    {
+      "path": "src/invoice2data/output/to_json.py",
+      "upstream_blob_sha": "c80eb6a6596df727b7d5bea85a062404920d09bf",
+      "bytes": 1895,
+      "sha256": "5027b535661a6dae7d758135c4c318279ccf8117c2b0fb3b7bb12e188f5026b7"
+    },
+    {
+      "path": "src/invoice2data/output/to_xml.py",
+      "upstream_blob_sha": "110e58842c95e42971def52ff93bb09a4724f0e6",
+      "bytes": 3882,
+      "sha256": "b636b75c01090cda6971a9e349e384a6e0c4d5bd46b99a2849ff0b7f7998c582"
+    },
+    {
+      "path": "src/invoice2data/py.typed",
+      "upstream_blob_sha": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tests/test_invoice_template.py",
+      "upstream_blob_sha": "2e2a3bb923110a75f9200c7f96bce02923ad39dc",
+      "bytes": 9800,
+      "sha256": "25edd46002e6c504a15e3345d2dadaa7f4b1103c2801ca943f98fd46eed9f180"
+    }
+  ],
+  "total_bytes": 288693
+}
