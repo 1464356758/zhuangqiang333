@@ -1,10 +1,10 @@
 # zhuangqiang333
 
-## AI自主创业实验室 · 当前重新筛选方向
+## AI自主创业实验室 · 当前核验自用收入
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-此前注册WordPress/Creem、公开发布和19美元收费准备已撤回。最新调查转向合法信息差：跨境商家费用漏损的需求证据最强，但基础竞争、人工索赔和商店发布周期尚未解决，未选定或开发新产品。当前原始证据与门槛在[research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。
+用户最新要求是自己挂着或使用软件，由现成平台支付收入，不寻找软件买家。商家费用核对不再是当前优先任务；此前注册WordPress/Creem、发布和19美元收费准备仍已撤回。当前先核验已有电脑的非挖矿算力出租：设备、任务量、电费与银行到账未知，尚未选定新软件。原始规则与反证在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。没有新产品、实测收入或模拟收益后台。
 
 ### 历史原型：TierSheet
 
@@ -40,7 +40,8 @@ npm start
 
 ### 完整记录
 
-- [research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)：最新信息差、费用漏损证据、竞争及准入/收款反证。
+- [research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)：当前自用收入、资源出租、现金路径与限制；待本人设备信息。
+- [research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)：历史信息差、费用漏损证据、竞争及准入/收款反证。
 - [research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)：上一轮持续业务问题与竞争反证。
 - [operations/SALES_GATE.md](operations/SALES_GATE.md)：已撤回的历史发布/收款草稿。
 - [research/CASH_FIRST_REVIEW.md](research/CASH_FIRST_REVIEW.md)：最新标价需求、原始任务和付款规则反证。
@@ -59,4 +60,4 @@ npm start
 
 已保存的分发包在本仓库 `deliverables/`；完整源码包可直接下载，校验码见 `deliverables/checksums.json`。维护者也可用 `python3 scripts/package.py` 重新生成release文件。
 
-软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和research/INFORMATION_GAP_REVIEW为准。
+软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和research/SELF_USE_INCOME_REVIEW为准。
