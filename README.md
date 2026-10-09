@@ -2,7 +2,9 @@
 
 ## TierSheet · AI自主创业实验室的第一轮有限实验
 
-2026-10-08。**可运行软件已完成；盈利尚未验证。销售关闭，实际付款/到账0，追加现金支出0。**
+2026-10-09 UTC。**可运行软件已完成并测试；没有真实买家，盈利未验证。销售关闭，实际付款/到账0，追加现金支出0。**
+
+当前暂停新增功能，下一项是把现成软件带到实际目录并验证购买；账号、市场发布和收费待授权。公开悬赏/接单已复查，未找到通过条件的确认订单，不将接单工作冒充自动收入。具体步骤在[operations/SALES_GATE.md](operations/SALES_GATE.md)。
 
 商品CSV＋档位折扣CSV＋可选SKU覆盖价→各档位PDF/CSV、价格审计、HTML和批量ZIP。整数金额计算，不上传、不修改店铺、不用AI API或服务器。完整免费单价目表版可作为WordPress插件。
 
@@ -10,7 +12,7 @@
 
 ### 立即使用
 
-下载/克隆项目，桌面Chrome/Edge直接打开 `dist/index.html`。
+[下载离线批量软件ZIP](deliverables/tiersheet-standalone-0.1.0.zip)，解压后双击 `index.html`。桌面Chrome/Edge可直接运行。也可下载/克隆项目后打开 `dist/index.html`。
 Try sample files → Build price lists → 勾选核对框 → Download all tiers · ZIP。
 免费版打开 `dist/free.html`。中文教程：[TUTORIAL.md](TUTORIAL.md)。
 
@@ -36,7 +38,9 @@ npm start
 
 ### 完整记录
 
-- [RESEARCH.md](RESEARCH.md) / [research/GITHUB.md](research/GITHUB.md)：原始链接、日期、证据等级、许可证和反证。
+- [operations/SALES_GATE.md](operations/SALES_GATE.md)：具体商品、零现金发布、本人操作与真实收款验收。
+- [research/CASH_FIRST_REVIEW.md](research/CASH_FIRST_REVIEW.md)：最新标价需求、原始任务和付款规则反证。
+- [RESEARCH.md](RESEARCH.md) / [research/GITHUB.md](research/GITHUB.md)：首轮原始链接、日期、证据等级、许可证和反证。
 - [BUSINESS.md](BUSINESS.md)：评分、定价/成本/结算、停止规则。
 - [PROJECT_STATUS.md](PROJECT_STATUS.md) / [TODO.md](TODO.md)：恢复检查点。
 - [TEST_REPORT.md](TEST_REPORT.md) / [SECURITY.md](SECURITY.md)：实际测试与边界。
@@ -50,3 +54,5 @@ npm start
 免费包GPL-2.0-or-later，完整COPYING已包含；独立批量码另见 [LICENSES.md](LICENSES.md)。公共源码增加复制风险，不保证盈利或源代码保密。
 
 已保存的分发包在本仓库 `deliverables/`；完整源码包可直接下载，校验码见 `deliverables/checksums.json`。维护者也可用 `python3 scripts/package.py` 重新生成release文件。
+
+软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和SALES_GATE为准。
