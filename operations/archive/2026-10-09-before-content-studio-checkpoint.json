@@ -1,13 +1,13 @@
 {
-  "as_of_utc": "2026-10-09T11:55:25.470Z",
-  "product": "笺作 · 小红书内容工作台",
-  "technical_status": "已测试：23项自动测试、类型/构建、60次原生Canvas和独立ZIP；浏览器/手机未验证",
-  "commercial_status": "未验证：用户自用软件，未推广或交易",
-  "market_publication_status": "未验证：仅创建者私有上线，不是市场公开发布",
-  "fee_authorization_status": "待授权：未充值模型或支付推广费用",
-  "new_feature_development": "已完成：小红书内容工作台，见apps/rednote-studio",
-  "latest_review": "apps/rednote-studio/TEST_REPORT.md",
-  "next_gate": "手机实际使用与下载验证；用户自行填密钥后验证真实AI生成，不要求购买电脑",
+  "as_of_utc": "2026-10-09T10:11:30.197Z",
+  "product": null,
+  "technical_status": "已测试：原始invoice2data源码子集；4项本地PDF集成测试通过，非商业产品",
+  "commercial_status": "未验证",
+  "market_publication_status": "未验证",
+  "fee_authorization_status": "待授权：5000元是新预算情景，未批准任何具体支付、充值或合作",
+  "new_feature_development": "本轮只评估小红书5000元获客及广告现金流，无新代码、账号访问、投放、购买或交易",
+  "latest_review": "research/XIAOHONGSHU_AD_REVIEW.md",
+  "next_gate": "先明确5000元服务的来源与实际内容；核验真实内容/人群、品牌付款、投流承担方、费用和到账，再决定小额正规验证",
   "financial_actuals": {
     "incremental_cash_cost_cny": 0,
     "production_payments": 0,
@@ -35,12 +35,12 @@
     "net_contribution_per_customer_cny": null
   },
   "existing_tests_date": "2026-10-08",
-  "software_changed_this_round": true,
+  "software_changed_this_round": false,
   "continuous_background_execution": false,
   "existing_zip_document_snapshot": "2026-10-08",
   "as_of_timezone": "Asia/Shanghai",
-  "selection_status": "已完成：用户指定内容创作软件",
-  "selection_note": "不将软件交付当作盈利或广告客户证据",
+  "selection_status": "未验证：用户提出小红书广告业务设想，未通过账号、需求与现金关口",
+  "selection_note": "不将5000元买两万粉或每日广告设想当已实现；正规真实投流可核验，虚假关注不执行",
   "market_plan_active": false,
   "previous_account_and_publication_request": "撤回，无需用户为本方向开户",
   "new_product_selected": false,
@@ -198,14 +198,5 @@
     "status": "未验证",
     "required": false,
     "source_type": null
-  },
-  "private_deployment_status": "已完成",
-  "private_deployment": {
-    "project_id": "appgprj_6ac8c2c6f2f88191a6a69ec762bbe0b5",
-    "version_id": "appgprj_6ac8c2c6f2f88191a6a69ec762bbe0b5~appgver_494917efea1881918beb14eb62ba28aa",
-    "deployment_id": "appgdep_6ac8d43cb5f08191b2440d8c8b3fd2e7",
-    "source_commit": "fe46bb242545a5dd8a8f95f448ca8a76dd1f6031",
-    "status": "succeeded",
-    "url": "https://rednote-studio-fpq.qq1464356758.chatgpt.site"
   }
 }

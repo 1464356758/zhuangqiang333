@@ -1,0 +1,13 @@
+{
+  "status": "已完成",
+  "site_id": "appgprj_6ac8c2c6f2f88191a6a69ec762bbe0b5",
+  "version_id": "appgprj_6ac8c2c6f2f88191a6a69ec762bbe0b5~appgver_494917efea1881918beb14eb62ba28aa",
+  "deployment_id": "appgdep_6ac8d43cb5f08191b2440d8c8b3fd2e7",
+  "deployment_status": "succeeded",
+  "url": "https://rednote-studio-fpq.qq1464356758.chatgpt.site",
+  "site_source_commit": "fe46bb242545a5dd8a8f95f448ca8a76dd1f6031",
+  "verified_at": "2026-10-09T11:55:25.470Z",
+  "mobile_user_flow": "未验证",
+  "real_ai_api": "未验证",
+  "incremental_cash_paid_cny": 0
+}

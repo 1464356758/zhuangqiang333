@@ -1,0 +1,8 @@
+date,type,item,currency,amount,status,notes
+2026-10-09,actual,代付费用,CNY,0,已完成,本轮未支付费用
+2026-10-09,actual,模型调用费用,CNY,0,已完成,没有真实API调用
+2026-10-09,actual,广告支出,CNY,0,已完成,未投放
+2026-10-09,unverified,未来托管费用,CNY,,未验证,以实际平台政策与额度为准
+2026-10-09,unverified,用户未来AI费用,CNY,,未验证,按本人模型账户实际账单记录
+2026-10-09,unverified,产品收入,CNY,,未验证,未进行商业交易
+
