@@ -1,13 +1,13 @@
 {
-  "as_of_utc": "2026-10-09T07:21:34Z",
+  "as_of_utc": "2026-10-09T07:30:19Z",
   "product": null,
   "technical_status": "未验证",
   "commercial_status": "未验证",
   "market_publication_status": "未验证",
   "fee_authorization_status": "待授权",
-  "new_feature_development": "本轮仅新方向公开研究，无新产品代码、账户或交易",
-  "latest_review": "PROJECT_STATUS.md",
-  "next_gate": "重新核验其他业务的现成购买需求、大陆个人准入、手机可管理性、成本及现金结算；所有Plus转售与联系请求撤回",
+  "new_feature_development": "已完成本轮其他路径公开筛选与规则核验；无新产品代码或真实交易",
+  "latest_review": "research/OTHER_ROUTES_AFTER_PLUS.md",
+  "next_gate": "具体产品的独立付费需求、免费替代缺口、分发可达性和手机全流程；未通过不开户/充值/开发",
   "financial_actuals": {
     "incremental_cash_cost_cny": 0,
     "production_payments": 0,
@@ -44,7 +44,7 @@
   "market_plan_active": false,
   "previous_account_and_publication_request": "撤回，无需用户为本方向开户",
   "new_product_selected": false,
-  "research_priority": "国内付费技能市场与标准化开发悬赏，优先真实订单和明确支付",
+  "research_priority": "核验扣子商店中具体付费产品的独立需求、可达曝光、差异化及手机全流程，未验证前不开发",
   "information_gap_review_status": "已完成",
   "candidate_commercial_status": "未验证",
   "fast_marketplace_route_status": "失败：Amazon官方获批后发布3–4周，不满足14天目标；不是全行业失败",
@@ -81,8 +81,8 @@
   "telegram_public_review_status": "已完成",
   "telegram_public_review_leads": 16,
   "telegram_review_scope": "公开频道索引/预览和官方公开资料，不覆盖全部频道，不登录/入群/联系真人",
-  "research_lead": null,
-  "research_lead_status": "未验证",
+  "research_lead": "扣子付费技能商店",
+  "research_lead_status": "未验证：规则已阅读，具体产品、订单、曝光、手机发布及实际收入未验证",
   "research_lead_selected_for_pilot": false,
   "next_user_action_requested": false,
   "previous_product": "TierSheet",
@@ -125,5 +125,6 @@
   "sensitive_session_data_stored": false,
   "plus_resale_plan_status": "失败：用户取消，未执行",
   "plus_resale_plan_active": false,
-  "formal_supply_query_active": false
+  "formal_supply_query_active": false,
+  "other_routes_review_status": "已完成"
 }
