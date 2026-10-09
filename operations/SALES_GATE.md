@@ -1,4 +1,6 @@
-# 当前唯一执行关口：真实发布与第一笔购买
+# 已撤回的TierSheet发布与购买验证草稿
+
+**2026-10-09当前决定：本清单已撤回，不是待执行的发布/开户任务。TierSheet方向停止，保留历史草稿；当前步骤在[PROJECT_STATUS.md](../PROJECT_STATUS.md)与[DIRECTION_REVIEW.md](../research/DIRECTION_REVIEW.md)。**
 
 2026-10-09 UTC。状态：准备材料已完成；正式发布待授权；付费意愿、购买和结算未验证。
 

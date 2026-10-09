@@ -3,11 +3,11 @@
   "product": "TierSheet",
   "technical_status": "已测试",
   "commercial_status": "未验证",
-  "market_publication_status": "待授权",
+  "market_publication_status": "未验证",
   "fee_authorization_status": "待授权",
-  "new_feature_development": "暂停，等待真实市场证据",
-  "latest_review": "research/CASH_FIRST_REVIEW.md",
-  "next_gate": "operations/SALES_GATE.md",
+  "new_feature_development": "停止TierSheet，尚无新项目通过开发门槛",
+  "latest_review": "research/DIRECTION_REVIEW.md",
+  "next_gate": "核查持续购买/询盘流程监测的未解决需求、分发与真实成本",
   "financial_actuals": {
     "incremental_cash_cost_cny": 0,
     "production_payments": 0,
@@ -23,5 +23,11 @@
   "existing_tests_date": "2026-10-08",
   "software_changed_this_round": false,
   "continuous_background_execution": false,
-  "existing_zip_document_snapshot": "2026-10-08"
+  "existing_zip_document_snapshot": "2026-10-08",
+  "as_of_timezone": "Asia/Shanghai",
+  "selection_status": "失败",
+  "selection_note": "TierSheet商业选择停止；不是通过真实转化率或市场规模数据判定",
+  "market_plan_active": false,
+  "previous_account_and_publication_request": "撤回，无需用户为本方向开户",
+  "new_product_selected": false
 }

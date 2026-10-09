@@ -1,10 +1,12 @@
 # zhuangqiang333
 
-## TierSheet · AI自主创业实验室的第一轮有限实验
+## AI自主创业实验室 · 当前重新筛选方向
 
-2026-10-09 UTC。**可运行软件已完成并测试；没有真实买家，盈利未验证。销售关闭，实际付款/到账0，追加现金支出0。**
+2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-当前暂停新增功能，下一项是把现成软件带到实际目录并验证购买；账号、市场发布和收费待授权。公开悬赏/接单已复查，未找到通过条件的确认订单，不将接单工作冒充自动收入。具体步骤在[operations/SALES_GATE.md](operations/SALES_GATE.md)。
+此前注册WordPress/Creem、公开发布和19美元收费准备已撤回。当前优先调查持续购买/询盘流程监测的具体缺口，尚无新项目通过开发门槛。当前判断与原始证据在[research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。
+
+### 历史原型：TierSheet
 
 商品CSV＋档位折扣CSV＋可选SKU覆盖价→各档位PDF/CSV、价格审计、HTML和批量ZIP。整数金额计算，不上传、不修改店铺、不用AI API或服务器。完整免费单价目表版可作为WordPress插件。
 
@@ -33,12 +35,13 @@ npm start
 |25自动测试、11浏览器组、独立输出校验|已测试|
 |原CSV预检因免费覆盖而停止|失败|
 |生产主机/MySQL、其他浏览器、付费意向、自然曝光|未验证|
-|账号实名、卖家资料、最终政策、正式发布/收款|待授权|
+|原方案发布/收款|未验证：方案已撤回|
 |生产支付、邮件交付、真实收入重复性|未验证|
 
 ### 完整记录
 
-- [operations/SALES_GATE.md](operations/SALES_GATE.md)：具体商品、零现金发布、本人操作与真实收款验收。
+- [research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)：当前撤回决定、持续业务问题与竞争反证。
+- [operations/SALES_GATE.md](operations/SALES_GATE.md)：已撤回的历史发布/收款草稿。
 - [research/CASH_FIRST_REVIEW.md](research/CASH_FIRST_REVIEW.md)：最新标价需求、原始任务和付款规则反证。
 - [RESEARCH.md](RESEARCH.md) / [research/GITHUB.md](research/GITHUB.md)：首轮原始链接、日期、证据等级、许可证和反证。
 - [BUSINESS.md](BUSINESS.md)：评分、定价/成本/结算、停止规则。
@@ -48,11 +51,11 @@ npm start
 - [operations/MEASUREMENT.md](operations/MEASUREMENT.md)：访问/使用/意向/付款/到账分别记录。
 - [DELIVERY.md](DELIVERY.md)：按十项标准的实际交付总表。
 
-拟入口是WordPress目录搜索→完整免费插件→用户主动到独立批量版，不保证新插件排名或自然流量。
-拟$19买断/12个月更新；Creem大陆个人Alipay需本人KYC/审查，$50余额门槛会使到账晚于首单。
+历史拟入口为WordPress目录搜索→完整免费插件→批量版；当前方案已停止，不继续申请发布或拉用户。
+历史拟$19买断/12个月更新未实施，Creem本人KYC/发布步骤已撤回。
 当前未联系真人、付广告费或拿测试交易冒充收入；会话结束后没有持续后台执行。
 免费包GPL-2.0-or-later，完整COPYING已包含；独立批量码另见 [LICENSES.md](LICENSES.md)。公共源码增加复制风险，不保证盈利或源代码保密。
 
 已保存的分发包在本仓库 `deliverables/`；完整源码包可直接下载，校验码见 `deliverables/checksums.json`。维护者也可用 `python3 scripts/package.py` 重新生成release文件。
 
-软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和SALES_GATE为准。
+软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和research/DIRECTION_REVIEW为准。
