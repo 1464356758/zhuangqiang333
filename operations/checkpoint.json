@@ -1,5 +1,5 @@
 {
-  "as_of_utc": "2026-10-09T07:59:29+00:00",
+  "as_of_utc": "2026-10-09T08:01:50+00:00",
   "product": null,
   "technical_status": "已测试：原始invoice2data源码子集；4项本地PDF集成测试通过，非商业产品",
   "commercial_status": "未验证",
@@ -145,6 +145,10 @@
     "cli_tested": false,
     "full_upstream_suite_tested": false,
     "dependency_license_audit_complete": false,
-    "production_deployed": false
+    "production_deployed": false,
+    "saved_repository": "1464356758/zhuangqiang333",
+    "remote_source_snapshot_commit": "b2b4bc05dd4472184bfd854d70c2f06f48a10dba",
+    "remote_files_verified": 76,
+    "remote_verification_file": "operations/github-source-audit-verification.json"
   }
 }

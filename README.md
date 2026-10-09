@@ -1,10 +1,19 @@
 # zhuangqiang333
 
-## AI自主创业实验室 · 当前核验订阅供货与跨国差价
+## AI自主创业实验室 · 公开 GitHub 源码运行验证
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-用户已确认中国大陆、只有手机，电脑投资未授权。泛多模型办公提议按最新反馈停止，当前查GPT月卡、跨国汇率与正规订阅分销。最新[供货/汇率/返佣复查](research/GPT_MONTH_CARD_AND_FX_REVIEW.md)尚无通过供货、获客、结算和净利润关口的项目。500名买家是目标，不是现有客户；没有新赚钱软件、交易或收入。
+用户已确认中国大陆、只有手机，电脑投资未授权。GPT转售和泛多模型办公方向已取消。最新请求为实际查看、下载并复用公开GitHub代码。本轮已读9仓库README和根许可证，下载invoice2data 62个未修改原始文件，核对内容并通过4项本地PDF集成测试。
+
+**这份源码已经能运行；买家、分发、手机管理、部署和收款仍未验证。没有新销售产品或真实收入。**
+
+- [本轮可运行代码、许可证与复现说明](experiments/github-code-audit/README.md)
+- [实际测试脚本](experiments/github-code-audit/test_upstream.py) / [测试结果](experiments/github-code-audit/TEST_REPORT.md)
+- [9仓库商业与许可复查](research/GITHUB_EXECUTABLE_REVIEW.md) / [固定版本](experiments/github-code-audit/REPOSITORY_PINS.json)
+- [原代码文件与校验清单](experiments/github-code-audit/UPSTREAM_MANIFEST.json)
+
+在项目根目录执行 `python experiments/github-code-audit/test_upstream.py`。当前在研究环境完成测试，不是手机运行教程；无需用户现在购买电脑、账号或服务器。下一步先核验具体任务的真实付费、现成分发、大陆结算及模板维护，不能把测试通过当作能盈利。
 
 先前[Telegram线索](research/TELEGRAM_INCOME_REVIEW.md)和自用收入资料作为历史保留，MQL5未选试单、ClawHunt注册/任务建议仍撤回；TierSheet及商家费用路线仍停止。恢复见[PROJECT_STATUS.md](PROJECT_STATUS.md)。
 
@@ -14,7 +23,7 @@
 
 ![真实运行截图，合成样例，不是客户数据](docs/screenshots/tiersheet-desktop.png)
 
-### 立即使用
+### 历史原型运行方式（商业方向已停止）
 
 [下载离线批量软件ZIP](deliverables/tiersheet-standalone-0.1.0.zip)，解压后双击 `index.html`。桌面Chrome/Edge可直接运行。也可下载/克隆项目后打开 `dist/index.html`。
 Try sample files → Build price lists → 勾选核对框 → Download all tiers · ZIP。
