@@ -1,0 +1,8 @@
+{
+  "name": "rednote-studio-0.1.0-source.zip",
+  "files": 136,
+  "size": 257518,
+  "sha256": "a9d33a5dae2f92b6d84d53b13a43f660e1c3181fedf1f41a9c9a2533cfe9dc85",
+  "site_source_commit": "fe46bb242545a5dd8a8f95f448ca8a76dd1f6031",
+  "notes": "源码与必要许可/锁文件；不含密钥、node_modules、构建缓存或测试截图。保留脚本执行权限。"
+}
