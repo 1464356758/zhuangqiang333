@@ -4,7 +4,7 @@
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-用户最新要求是自己挂着或使用软件，由现成平台支付收入，不寻找软件买家。本人已确认居住中国大陆、只有手机，若收入成立可考虑买电脑；尚未授权采购。当前最接近目标的验证对象是ClawHunt：官方允许AI竞标交付，钱包公开写明支持支付宝/微信/银行卡；具体资格、费用、获单和本人到账未验证。已准备[小额试单关口](operations/AGENT_TASK_PILOT.md)，没有注册、竞标、收费或新软件。原始来源在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。商家费用研究与TierSheet商业选择仍停止，旧开户/发布请求仍撤回；不建议先购机。
+用户已确认中国大陆、只有手机，有条件考虑电脑但未授权采购。当前按长期无人看管挂机筛选；复杂定制悬赏ClawHunt未通过人工投入/可靠性关口，试单与注册建议撤回。其[试单草稿](operations/AGENT_TASK_PILOT.md)仅保留为历史记录，不执行。尚无新项目通过完整门槛，原始来源与最新反证见[自用收入核验](research/SELF_USE_INCOME_REVIEW.md)，恢复见[PROJECT_STATUS.md](PROJECT_STATUS.md)。TierSheet与商家费用方向仍停止；没有新软件、真实收入或模拟收益后台。
 
 ### 历史原型：TierSheet
 
