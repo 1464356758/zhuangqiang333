@@ -1,6 +1,6 @@
 # 第一轮公开市场调查
 
-**2026-10-09当前决定：按用户新要求转向自己挂着或使用软件、由现成平台支付的路径。最新核验在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，本人确认只有手机，有条件考虑购机；手机任务和新增悬赏未过开发门槛，暂不建议专门购机。TierSheet仍停止，开户/发布请求撤回；商家费用核对不再作为当前任务。下文、DIRECTION_REVIEW与INFORMATION_GAP_REVIEW均为历史研究。**
+**2026-10-09当前决定：本人确认居住中国大陆、只有手机；电脑意愿不是采购授权。新增核验ClawHunt、BCE澜算万模、瞬知悬赏；ClawHunt作为小额验证对象，不是已选定的盈利产品。官方AI参与/国内钱包途径可追溯，真实获单、费率和本人到账未验证。具体见[自用收入核验](research/SELF_USE_INCOME_REVIEW.md)及[试单关口](operations/AGENT_TASK_PILOT.md)。尚无新项目通过完整开发门槛，不建议先购机。TierSheet仍停止，商家费用研究与旧开户/发布请求撤回。下文与此前比较保留为历史研究。**
 
 2026-10-09补充：[公开标价任务与付款规则复查](research/CASH_FIRST_REVIEW.md)已完成，未确认可领取且符合约束的订单。原软件停止商业开发；[历史发布/购买验证草稿](operations/SALES_GATE.md)已撤回，不能照旧执行。未获得收入。下文保留2026-10-08首轮证据快照。
 

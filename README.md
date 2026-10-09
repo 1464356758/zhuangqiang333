@@ -4,7 +4,7 @@
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-用户最新要求是自己挂着或使用软件，由现成平台支付收入，不寻找软件买家。商家费用核对不再是当前优先任务；此前注册WordPress/Creem、发布和19美元收费准备仍已撤回。本人现已确认只有手机，若收入成立可考虑买电脑；这不是采购授权。目前不建议为Salad专门购机，转查手机操作型任务及允许AI辅助的交付任务；尚无项目通过开发门槛、未选定新软件。原始规则与反证在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。没有新产品、实测收入或模拟收益后台。
+用户最新要求是自己挂着或使用软件，由现成平台支付收入，不寻找软件买家。本人已确认居住中国大陆、只有手机，若收入成立可考虑买电脑；尚未授权采购。当前最接近目标的验证对象是ClawHunt：官方允许AI竞标交付，钱包公开写明支持支付宝/微信/银行卡；具体资格、费用、获单和本人到账未验证。已准备[小额试单关口](operations/AGENT_TASK_PILOT.md)，没有注册、竞标、收费或新软件。原始来源在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。商家费用研究与TierSheet商业选择仍停止，旧开户/发布请求仍撤回；不建议先购机。
 
 ### 历史原型：TierSheet
 

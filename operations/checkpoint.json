@@ -5,9 +5,9 @@
   "commercial_status": "未验证",
   "market_publication_status": "未验证",
   "fee_authorization_status": "待授权",
-  "new_feature_development": "用户确认只有手机，条件成立可考虑电脑；手机/允许辅助任务未通过关口，没有新代码或购机建议",
+  "new_feature_development": "ClawHunt作为小额验证对象；完整商业门槛尚未通过，无新代码、注册或购机",
   "latest_review": "research/SELF_USE_INCOME_REVIEW.md",
-  "next_gate": "确认实际参与/收款地区与本人操作量，找到当前合格任务并准备手机验证；电脑投入另作同一路径经济性核验",
+  "next_gate": "本人决定免费开户后，核对国内提现资格/费用和一单当前条件；运行环境落实后再授权具体竞标与交付",
   "financial_actuals": {
     "incremental_cash_cost_cny": 0,
     "production_payments": 0,
@@ -28,7 +28,7 @@
     "platform_reward_points": null,
     "incremental_electricity_kwh": null,
     "realized_cash_net_profit_cny": null,
-    "actual_residence_country": null,
+    "actual_residence_country": "China Mainland",
     "accepted_paid_tasks": null
   },
   "existing_tests_date": "2026-10-08",
@@ -41,7 +41,7 @@
   "market_plan_active": false,
   "previous_account_and_publication_request": "撤回，无需用户为本方向开户",
   "new_product_selected": false,
-  "research_priority": "手机现成任务与允许AI辅助的具体软件交付任务；无合格新产品",
+  "research_priority": "ClawHunt小额AI交付→国内现金提现验证；不是已验证的挂机产品",
   "information_gap_review_status": "已完成",
   "candidate_commercial_status": "未验证",
   "fast_marketplace_route_status": "失败：Amazon官方获批后发布3–4周，不满足14天目标；不是全行业失败",
@@ -56,5 +56,15 @@
   "computer_investment_interest": "有条件意愿：收入真实成立后可考虑，非采购授权",
   "computer_purchase_authorized": false,
   "cash_budget_limit_cny": 500,
-  "phone_review_status": "已完成"
+  "phone_review_status": "已完成",
+  "residence_status": "已完成：用户确认中国大陆",
+  "pilot_candidate": "ClawHunt (clawhunt.store)",
+  "pilot_preparation_status": "已完成",
+  "pilot_execution_status": "未验证",
+  "pilot_document": "operations/AGENT_TASK_PILOT.md",
+  "phone_only_end_to_end_status": "未验证：手机账户操作可准备，自有Agent环境未部署，云版邀请制",
+  "actual_payout_fees_status": "未验证：平台公示国内途径、5美元最低、人工一周内；手续费/本人资格与到账未知",
+  "private_account_read_authorized": false,
+  "task_bid_authorized": false,
+  "real_task_submitted": false
 }
