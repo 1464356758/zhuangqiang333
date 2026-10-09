@@ -2,7 +2,9 @@
 
 查证：2026-10-09 UTC。用户最新目标：自己挂着或使用软件，由已有平台支付收入，不找客户、不推广软件。原商家费用核对方向停止作为当前任务，保留历史研究。未读取个人记忆、旧聊天、其他仓库或私有数据。
 
-## 当前决定
+**2026-10-09补充：本人确认目前只有手机，若收入路径真实成立可考虑买电脑；这不是采购授权或预算上限变更。以下“已有电脑”候选转为历史条件研究。当前没有项目通过开发门槛，也不建议为Salad专门购机。最新结果见本文件末尾“手机与购机核验”。**
+
+## 上一轮条件候选（已有电脑时）
 
 **优先核验已有电脑的非挖矿算力出租。状态：未验证。** Salad 官方公开资料说明有自动分配的容器计算任务，并把中国列入 PayPal 奖励支持地区；这只是条件候选，不是已验证本人的设备能接任务、提现或赚钱。硬件、系统、电价、真实任务量和最终银行到账成本尚未知。
 
@@ -89,3 +91,69 @@
 |日赚500元或稳定重复收入|未验证|未找到支持此目标的可靠证据，不保证|
 
 无持续后台环境。本轮会话结束后不会继续出租资源、寻找订单或收款。
+
+## 手机与购机核验
+
+查证：2026-10-09，Asia/Shanghai。本轮没有安装应用、开户、申请任务、提交PR、分享身份资料、发生费用或交易。手机系统、实际地区与愿意投入的本人操作时长尚未确认；继续暂按大陆可参与/可收款筛查，不能把这个筛查假设当已验证所在地。
+
+**决定：当前不采购电脑、不开发收入界面。** 用户只有手机是已确认条件；电脑投资是条件意愿。平台存在付款流程、标价或任务不等于本人的任务被分配、成果获验收或现金到账。纯挂机样本未满足短期现金目标；有人工测试/软件交付任务，但未确认本人可领取且允许具体辅助方式的订单。
+
+|样本|本轮原始事实|决定与缺口|
+|---|---|---|
+|Salad专门购机|官方FAQ明确不建议专门买GPU/PC；回本取决于设备价格、任务量、在线时间、电费，均不保证|购机路线未验证；不能以“能投资”代替经济性。手机做别的任务赚到钱，也不能验证GPU租赁收益|
+|EarnApp手机带宽|官方指南：美国以外最高每IP每月5美元，按实际贡献而非仅在线计；2026-07-21付款说明PayPal/Wise10美元起，处理可能10工作日|不选短周期方案。仅一个IP、无其他奖励且达到该最高贡献时，10/5也需约2个月累计到门槛；这只是算术下界条件，不是本人收益预测。网络许可、地区付款、流量费未验证|
+|Toloka标注|2026-05-27资格条款将China列为不能开户/从业/付款的地区之一，还限制用VPN遮掩地区|按大陆条件淘汰，不建议开户或绕过限制|
+|uTest真人测试|公开索引有中国测试招募；官方要求本人测试，并禁止用AI写问题报告、完成用例或代写反馈。收款方式按地区，通常月中/月末付款|存在业务需求，未通过自编自动收入软件门槛；若做真人测试须真实参与，不能自动代答|
+|uTest中国自动驾驶研究|官方搜索索引写100美元报酬、至少两次测试行程、部分城市实际测试区域；完整页面当前仅返回JavaScript提示，索引没有可靠年份/截止日|未验证，不当可领取订单；需要本人所在地、真实行程、完整项目要求和当前名额，不视为远程挂机|
+|Test IO/testNow|官方手机应用支持Android/iOS、手机完成课程及测试、内置AI帮助；AI指南允许匿名泛化流程辅助，保留人工判断和保密要求|可进一步核验的操作型任务，未选产品。官方注册FAQ同时写需要PC，与手机课程说明有差异，纯手机完整路径未实测；现成客户端已有辅助，不证明需重写软件|
+|Test IO验收与付款|条款按被接受的缺陷/用例付费，重复或不可复现可不付。Cirro当前详细说明最低25美元，银行11/26日、PayPal11日；FAQ只写月付|不保证任务或收入；按付款方法核对详细规则，不能把余额Paid当银行到账。大陆实际可用方式/费率、本人任务量和学习工时未知|
+|Gitpay软件悬赏|贡献文档要求先确认分配，再交付/验收；当前付款接Whop。Whop名单包含China，但KYC/实际方法/费用仍依账号；PayPal目的地还受原支付方式影响|未验证：当前公开任务页没有返回可核验任务条目；未确认允许AI辅助的可领订单。第三方旧文档不能替代当前付款说明|
+|BountyHub软件悬赏|允许第三方创建悬赏，金额可预付或待解决再付；条款需合并和创建者接受，首页又提可接受未合并fork；接受/支付可有争议|未验证：没有资金到账或本人领取证据；需澄清规则与具体创建者承诺，不把机器人金额标签当托管资金证明|
+
+三个新增任务的实况（均未申请、评论、领取或开PR）：
+
+- react/react #37620：2026-10-09 API读取为open，9月15日第三方发100美元BountyHub通知；问题提交人9月16日表示不是自己发的悬赏。第三方资助本身允许，并不据此判欺诈，但具体付款责任未验证。9月28日另一参与者已给出PR #37705与测试自述，存在已交付竞争，不作为现成空闲订单。
+- moorcheh-ai/memanto #37：2026-10-09 API读取closed/completed，关闭于2026-05-08。100美元标签不是当前可领任务，也没有被本项目审计的付款。
+- fluxerapp/fluxer-meta #8：搜索索引显示250美元，但原issue和comments API当前404。索引链接的jackmercy/fluxer-meta #3经API核验其实是pull request，已于2026-08-30关闭；不能把该链接当可领取的新issue。原任务当前资格未知，不继续投入实现。
+
+### 下一项可执行关口
+
+1. 确认实际参与/收款地区及可接受的本人操作量。用户说“用着”，不预设只要完全被动；也不能把高强度接单当原目标已满足。
+2. 筛出本人能进入、正在招募、付款条件明确、允许相关软件/AI辅助的一个具体任务；先核对验收与付款，不开发泛用“自动接单赚钱”外壳。任务类别不合适则停止该候选。
+3. 条件成立后准备最短手机验证流程；注册/协议/KYC/私有任务材料/联系真人/真实付款与提现均需相应授权，敏感凭证仅在官方页面由本人填写。
+4. 完成同一路径的真实验收和收款，记录本金支出、工时、手续费/税、现金净额；再评估是否可重复及电脑到底能增加多少效率/净收益。一次到账不代表稳定盈利，换收入机制也不能继承其收益证明。
+5. 购机要有具体规格/价格、同一流程的成本与回款假设、保守收益情形及授权。原≤500元预算仍有效；目前没有采购建议、订单或费用。
+
+本轮新代码0，新增现金支出0、真实收款0、到账0。软件收入路径状态未验证；旧TierSheet测试仍是2026-10-08，没有复测。本轮文档是执行检查点，不是新的产品展示网页。会话结束无继续运行的任务。
+
+### 本轮补充原始来源
+
+全部查证于2026-10-09。收入上限/标签是厂商说明或任务标价，不是审计收款。完整动态页无法读取的项目已明确标注。
+
+- https://support.salad.com/faq/compatibility/should-i-buy-a-gpu-pc-for-salad/ ：专门购机不推荐与不保证回本。
+- https://help.earnapp.com/hc/en-us/articles/38640314568721--Comprehensive-EarnApp-Earnings-Guide ：官方单IP上限、实际贡献计费，文章更新2025-09-03；目前仍公开，不假设未来不变。
+- https://help.earnapp.com/hc/en-us/articles/10147246886801--What-are-the-available-payment-methods-and-processing-time ：2026-07-21更新的10美元门槛与支付处理；旧2.50美元信息不采用。
+- https://help.earnapp.com/hc/en-us/articles/10088544277265-In-Which-Countries-is-EarnApp-Available ：2026-06-09可访问地区，不等于当地付款和线路许可。
+- https://toloka.ai/legal/eligibility-and-geographic-restrictions ：2026-05-27资格限制，不以营销“全球”替代实际地区条款。
+- https://support.utest.com/csp?id=kb_article_view&sysparm_article=KB0011137 ：本人完成测试及AI报告限制。
+- https://support.utest.com/csp?id=kb_article_view&sysparm_article=KB0010036 ：按地区的付款方法和结算日。
+- https://www.utest.com/projects/china-self-driving-vehicles-study ：公开索引报酬/区域条件，完整正文未取得。
+- https://academy.test.io/en/articles/9070580-responsible-usage-of-ai-in-testing ：2025-11-12匿名通用辅助、保密与人工判断；不是全面自动执行许可。
+- https://academy.test.io/en/articles/5680176-testnow-mobile-app ：2025-07-17手机课程/测试/内置AI，Android/iOS。
+- https://test.io/company/become-a-tester ：注册免费、PC条件、付款营销FAQ；最高50美元不是每个缺陷价格。
+- https://test.io/policies-testers ：验收、重复/不可复现、保密与任务限制。
+- https://intercom.help/cirro-freelancer-community/en/articles/6726283-payment-process ：详细结算说明与25美元门槛；Paid不保证已到银行。
+- https://docs.gitpay.me/docs/en/contributor/ ：先确认分配、付款约定和验收。
+- https://docs.gitpay.me/docs/en/whop-payout-setup/ ：当前Whop连接、KYC和地区方法。
+- https://docs.whop.com/manage-your-business/manage-payouts/set-up-payouts ：支持名单包含China，实际KYC未做。
+- https://docs.whop.com/manage-your-business/manage-payouts/payout-methods ：按国家付款方法、处理/审查、PayPal与原支付方式条件。
+- https://www.bountyhub.dev/en/terms-of-service ：创建、验收、交易费用与争议。
+- https://www.bountyhub.dev/en ：第三方创建、预付/事后付与未合并fork说明，与条款差异待核实。
+- https://github.com/react/react/issues/37620 ：当前公开任务，API核对open与评论。
+- https://github.com/react/react/issues/37620#issuecomment-5701332161 ：提交人不是悬赏创建者。
+- https://github.com/react/react/issues/37620#issuecomment-5874604055 ：他人已提交修复的评论；测试数字是他人自述。
+- https://github.com/moorcheh-ai/memanto/issues/37 ：已关闭任务，未查验资金结算。
+- https://github.com/fluxerapp/fluxer-meta/issues/8 ：搜索索引与原API可用性不同；API当前404。
+- https://github.com/jackmercy/fluxer-meta/pull/3 ：关闭的PR，不能视为新订单。
+
+国内搜活帮/众测的本轮官方域名搜索未返回足够资料，未证实当前准入、报酬或自动化条款；没有推荐下载非官方客户端。空搜索结果不证明这些平台不存在。

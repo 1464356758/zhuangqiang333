@@ -4,7 +4,7 @@
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-用户最新要求是自己挂着或使用软件，由现成平台支付收入，不寻找软件买家。商家费用核对不再是当前优先任务；此前注册WordPress/Creem、发布和19美元收费准备仍已撤回。当前先核验已有电脑的非挖矿算力出租：设备、任务量、电费与银行到账未知，尚未选定新软件。原始规则与反证在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。没有新产品、实测收入或模拟收益后台。
+用户最新要求是自己挂着或使用软件，由现成平台支付收入，不寻找软件买家。商家费用核对不再是当前优先任务；此前注册WordPress/Creem、发布和19美元收费准备仍已撤回。本人现已确认只有手机，若收入成立可考虑买电脑；这不是采购授权。目前不建议为Salad专门购机，转查手机操作型任务及允许AI辅助的交付任务；尚无项目通过开发门槛、未选定新软件。原始规则与反证在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。没有新产品、实测收入或模拟收益后台。
 
 ### 历史原型：TierSheet
 
@@ -40,7 +40,7 @@ npm start
 
 ### 完整记录
 
-- [research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)：当前自用收入、资源出租、现金路径与限制；待本人设备信息。
+- [research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)：当前自用收入与手机/购机核验；任务、辅助与现金条件仍未验证。
 - [research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)：历史信息差、费用漏损证据、竞争及准入/收款反证。
 - [research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)：上一轮持续业务问题与竞争反证。
 - [operations/SALES_GATE.md](operations/SALES_GATE.md)：已撤回的历史发布/收款草稿。

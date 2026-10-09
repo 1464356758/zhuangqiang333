@@ -1,6 +1,6 @@
 # 第一轮公开市场调查
 
-**2026-10-09当前决定：按用户新要求转向自己挂着或使用软件、由现成平台支付的路径。最新核验在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，已有设备的非挖矿算力出租尚未验证。TierSheet仍停止，开户/发布请求撤回；商家费用核对不再作为当前任务。下文、DIRECTION_REVIEW与INFORMATION_GAP_REVIEW均为历史研究。**
+**2026-10-09当前决定：按用户新要求转向自己挂着或使用软件、由现成平台支付的路径。最新核验在[research/SELF_USE_INCOME_REVIEW.md](research/SELF_USE_INCOME_REVIEW.md)，本人确认只有手机，有条件考虑购机；手机任务和新增悬赏未过开发门槛，暂不建议专门购机。TierSheet仍停止，开户/发布请求撤回；商家费用核对不再作为当前任务。下文、DIRECTION_REVIEW与INFORMATION_GAP_REVIEW均为历史研究。**
 
 2026-10-09补充：[公开标价任务与付款规则复查](research/CASH_FIRST_REVIEW.md)已完成，未确认可领取且符合约束的订单。原软件停止商业开发；[历史发布/购买验证草稿](operations/SALES_GATE.md)已撤回，不能照旧执行。未获得收入。下文保留2026-10-08首轮证据快照。
 
