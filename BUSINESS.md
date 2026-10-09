@@ -1,10 +1,10 @@
 # 商业决策与验证边界
 
-**2026-10-09当前决定：TierSheet商业选择已停止，撤回发布和收费准备。下文为历史评分/方案，不是当前行动计划；新的商业筛选见[research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)。**
+**2026-10-09当前决定：TierSheet商业选择已停止，撤回发布和收费准备。下文为历史评分/方案，不是当前行动计划；最新合法信息差筛选见[research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)：费用漏损类有具体问题与收费供给，但自己的优势、分发、人工负担与收款毛利仍未验证。**
 
 上一轮历史方案（已撤回，2026-10-09 UTC）：暂用产品名TierSheet，最终名称/商标尚未批准。**可运行原型已测试，正式商业验证未通过；暂停新增功能，下一步仅为零新增现金的发布/购买验证，发布与收费待授权。** 未收费、未开通付款、未发布市场页面、未联系客户。
 
-本轮另查公开标价采购和开发悬赏：过期、已雇用、未确认预算、竞争或付款等待，不构成已接受的订单。持续逐单交付不符合本项目低人工运营目标，未以接单替代软件经营。具体反证在[research/CASH_FIRST_REVIEW.md](research/CASH_FIRST_REVIEW.md)，当前唯一执行关口在[operations/SALES_GATE.md](operations/SALES_GATE.md)。下面评分保留为首轮比较，不是保证本项目盈利的结论。
+本轮另查公开标价采购和开发悬赏：过期、已雇用、未确认预算、竞争或付款等待，不构成已接受的订单。持续逐单交付不符合本项目低人工运营目标，未以接单替代软件经营。具体反证在[research/CASH_FIRST_REVIEW.md](research/CASH_FIRST_REVIEW.md)，历史发布草稿[operations/SALES_GATE.md](operations/SALES_GATE.md)已撤回，不是当前执行关口。下面评分保留为首轮比较，不是保证本项目盈利的结论。
 
 ## 按指定权重评分
 

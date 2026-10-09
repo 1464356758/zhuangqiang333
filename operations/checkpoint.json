@@ -5,9 +5,9 @@
   "commercial_status": "未验证",
   "market_publication_status": "未验证",
   "fee_authorization_status": "待授权",
-  "new_feature_development": "停止TierSheet，尚无新项目通过开发门槛",
-  "latest_review": "research/DIRECTION_REVIEW.md",
-  "next_gate": "核查持续购买/询盘流程监测的未解决需求、分发与真实成本",
+  "new_feature_development": "TierSheet仍停止，费用漏损类别尚未通过开发门槛，未写新产品代码",
+  "latest_review": "research/INFORMATION_GAP_REVIEW.md",
+  "next_gate": "找出现有工具未解决的可自动费用核对工作流，验证合法数据/自然获客/审批/工时/收款类别与毛利",
   "financial_actuals": {
     "incremental_cash_cost_cny": 0,
     "production_payments": 0,
@@ -29,5 +29,9 @@
   "selection_note": "TierSheet商业选择停止；不是通过真实转化率或市场规模数据判定",
   "market_plan_active": false,
   "previous_account_and_publication_request": "撤回，无需用户为本方向开户",
-  "new_product_selected": false
+  "new_product_selected": false,
+  "research_priority": "合法信息差：跨境商家费用漏损",
+  "information_gap_review_status": "已完成",
+  "candidate_commercial_status": "未验证",
+  "fast_marketplace_route_status": "失败：Amazon官方获批后发布3–4周，不满足14天目标；不是全行业失败"
 }

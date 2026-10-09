@@ -4,7 +4,7 @@
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-此前注册WordPress/Creem、公开发布和19美元收费准备已撤回。当前优先调查持续购买/询盘流程监测的具体缺口，尚无新项目通过开发门槛。当前判断与原始证据在[research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。
+此前注册WordPress/Creem、公开发布和19美元收费准备已撤回。最新调查转向合法信息差：跨境商家费用漏损的需求证据最强，但基础竞争、人工索赔和商店发布周期尚未解决，未选定或开发新产品。当前原始证据与门槛在[research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)，恢复状态在[PROJECT_STATUS.md](PROJECT_STATUS.md)。
 
 ### 历史原型：TierSheet
 
@@ -40,7 +40,8 @@ npm start
 
 ### 完整记录
 
-- [research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)：当前撤回决定、持续业务问题与竞争反证。
+- [research/INFORMATION_GAP_REVIEW.md](research/INFORMATION_GAP_REVIEW.md)：最新信息差、费用漏损证据、竞争及准入/收款反证。
+- [research/DIRECTION_REVIEW.md](research/DIRECTION_REVIEW.md)：上一轮持续业务问题与竞争反证。
 - [operations/SALES_GATE.md](operations/SALES_GATE.md)：已撤回的历史发布/收款草稿。
 - [research/CASH_FIRST_REVIEW.md](research/CASH_FIRST_REVIEW.md)：最新标价需求、原始任务和付款规则反证。
 - [RESEARCH.md](RESEARCH.md) / [research/GITHUB.md](research/GITHUB.md)：首轮原始链接、日期、证据等级、许可证和反证。
@@ -58,4 +59,4 @@ npm start
 
 已保存的分发包在本仓库 `deliverables/`；完整源码包可直接下载，校验码见 `deliverables/checksums.json`。维护者也可用 `python3 scripts/package.py` 重新生成release文件。
 
-软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和research/DIRECTION_REVIEW为准。
+软件代码本轮未更改，原ZIP保留2026-10-08版本；完整源码ZIP中的文档是当日快照。最新决策及检查点以main的PROJECT_STATUS和research/INFORMATION_GAP_REVIEW为准。
