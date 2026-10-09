@@ -1,10 +1,12 @@
 # zhuangqiang333
 
-## AI自主创业实验室 · 当前核验自用收入
+## AI自主创业实验室 · 当前核验订阅供货与跨国差价
 
 2026-10-09，Asia/Shanghai。**TierSheet商业选择已停止；可运行软件及测试作为历史技术成果保留。真实收入/到账0，新增现金支出0。**
 
-用户已确认中国大陆、只有手机，电脑投资是未授权的条件意愿。最新[Telegram公开线索复查](research/TELEGRAM_INCOME_REVIEW.md)找到MQL5 Cloud自动计算和AiToEarn人民币标价任务；前者设备/提款/净利润、后者账号运营/验收等关口未通过，尚无合格挂机项目。ClawHunt试单与注册建议继续撤回，其[历史草稿](operations/AGENT_TASK_PILOT.md)不执行。TierSheet与商家费用方向仍停止；没有新软件或收入。恢复见[PROJECT_STATUS.md](PROJECT_STATUS.md)。
+用户已确认中国大陆、只有手机，电脑投资未授权。泛多模型办公提议按最新反馈停止，当前查GPT月卡、跨国汇率与正规订阅分销。最新[供货/汇率/返佣复查](research/GPT_MONTH_CARD_AND_FX_REVIEW.md)尚无通过供货、获客、结算和净利润关口的项目。500名买家是目标，不是现有客户；没有新赚钱软件、交易或收入。
+
+先前[Telegram线索](research/TELEGRAM_INCOME_REVIEW.md)和自用收入资料作为历史保留，MQL5未选试单、ClawHunt注册/任务建议仍撤回；TierSheet及商家费用路线仍停止。恢复见[PROJECT_STATUS.md](PROJECT_STATUS.md)。
 
 ### 历史原型：TierSheet
 
